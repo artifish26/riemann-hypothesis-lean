@@ -8,6 +8,39 @@ unconditional upstream theorems, criterion equivalences, and positivity on one
 fixed support class. The global positivity statement on the right-hand side of
 the Li/Weil criteria remains open and RH-equivalent.
 
+## Release identity
+
+This inventory is published in documentation release `v0.1.1` and is bound to
+the production-theorem baseline below. The production Lean sources are
+unchanged from `v0.1.0`; subsequent changes before `v0.1.1` affect repository
+security and documentation only.
+
+| Field | Release value |
+| --- | --- |
+| Production-theorem tag | `v0.1.0` |
+| Production-theorem commit | `b215f8e9ca8e3db16e0d5902f97f8f7de537a92c` |
+| Documentation release | `v0.1.1` |
+| Release date | `2026-07-19` |
+| Lean toolchain | `leanprover/lean4:v4.31.0` |
+| Mathlib revision | `db127794c79fdeb86f6b0cf6ff2c804026fbaff1` |
+| Tagged clean build | 3,904 jobs; [successful `v0.1.0` run](https://github.com/artifish26/riemann-hypothesis-lean/actions/runs/29702361253) |
+
+The immutable `v0.1.1` GitHub release binds this inventory to its own release
+commit. The explicit commit above identifies the theorem-source baseline whose
+claims are inventoried here.
+
+## Status summary
+
+| Result | Status | Exact scope |
+| --- | --- | --- |
+| Multiplicity-aware zero count `O(T log T)` | Proved | Canonical positive-ordinate completed-zeta zero count with analytic multiplicity |
+| Polynomial-Gaussian zero summability | Proved | Selected completed-zeta polynomial-Gaussian source family |
+| Guinand-Weil formula | Proved | Real-even polynomial-Gaussian source under the fixed project Fourier convention |
+| Full Li criterion | Proved equivalence | All positive-index, full multiplicity-aware zeta Li coefficients |
+| Burnol positivity | Proved with restricted scope | One existentially fixed symmetric support interval |
+| PNT cutoff covariance | Proved | Regularised Li cutoff covariance from the pinned PrimeNumberTheoremAnd source |
+| Global Li/Weil positivity | Open | Criterion-determining global class; RH-equivalent |
+
 The classifications below use the project's four theorem roles: source
 theorem, normalisation/window/cutoff bridge, elementary cleanup estimate, and
 endpoint assembly.
@@ -71,9 +104,10 @@ multiplicity.
 - **Explicit assumptions:** only the polynomial parameter `p`; no RH,
   zero-simplicity, contour-identity, or error-decay premise remains in the
   endpoint.
-- **Classification:** source theorem, assembled from the finite weighted xi
-  rectangle identity, right-vertical prime/pole/Gamma evaluation, good-height
-  horizontal decay, and cofinal multiplicity-normalised zero sums.
+- **Role:** primary analytic endpoint.
+- **Project classification:** source theorem, assembled from the finite
+  weighted xi rectangle identity, right-vertical prime/pole/Gamma evaluation,
+  good-height horizontal decay, and cofinal multiplicity-normalised zero sums.
 - **Primary source anchor:** A. P. Guinand, *Fourier Reciprocities and the
   Riemann Zeta-Function*, DOI
   [10.1112/plms/s2-51.6.401](https://doi.org/10.1112/plms/s2-51.6.401).
@@ -174,4 +208,40 @@ Nothing in this release changes this status.
 
 `RiemannHypothesisProject/Basic.lean` imports the production surface.
 `RELEASE/PublicationAxiomAudit.lean` is a repeatable, non-production consumer
-that prints the axioms of the representative endpoints listed here.
+that prints the axioms of the representative endpoints listed here. At the
+production-theorem release commit, those endpoints report only:
+
+- `propext`;
+- `Classical.choice`;
+- `Quot.sound`.
+
+This audit mechanically records the Lean dependency boundary of the selected
+declarations. It does not by itself establish that every formal definition,
+normalisation, or theorem statement is semantically faithful to the cited
+mathematics; that remains a matter for mathematical review.
+
+## External reviewer checklist
+
+The most valuable bounded review targets are:
+
+1. **Xi/Jensen growth and multiplicity bridge.** Review
+   `exists_unconditional_canonicalMultiplicityCount_mulLog_bound` in
+   `RiemannHypothesisProject/RiemannVonMangoldt/RiemannXiJensen.lean`, including
+   the xi-growth input, Jensen divisor count, and analytic-order multiplicity
+   normalisation.
+2. **Guinand-Weil Fourier and Gamma normalisation.** Review
+   `guinandWeilPiEvenPolynomialGaussianLiteratureFormula` in
+   `RiemannHypothesisProject/GuinandWeilConcrete/PolynomialGaussianFormulaIdentity.lean`
+   together with `LiteratureNormalization.lean`, especially the Fourier
+   convention and prime, pole, and Gamma constants.
+3. **Li starred convergence and Bombieri-Lagarias instantiation.** Review
+   `RHStatement_iff_fullZetaLiCoefficient_nonneg` in
+   `RiemannHypothesisProject/LiCriterion/ZetaBombieriLagariasCriterion.lean`
+   together with `StarConvergence.lean`, including multiplicity expansion and
+   the passage to full Li coefficients.
+4. **Burnol support and residual identification.** Review
+   `exists_burnolFixedSupport_guinandWeilBurnolLiteratureResidual_nonneg` in
+   `RiemannHypothesisProject/WeilPositivity/BurnolFormulaClosure.lean` and
+   `burnolLocalSpectralQuadraticForm_eq_two_pi_mul_guinandWeilBurnolLiteratureResidualSide`
+   in `BurnolFormulaIdentification.lean`, with particular attention to the
+   fixed support class and exact `2 * pi` factor.
