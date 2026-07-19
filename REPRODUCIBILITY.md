@@ -19,7 +19,7 @@ and Mathlib cache artifacts.
 ```text
 git clone https://github.com/artifish26/riemann-hypothesis-lean.git
 cd riemann-hypothesis-lean
-git checkout v0.1.0
+git checkout v0.1.1
 lake exe cache get
 lake build
 lake env lean RELEASE/PublicationAxiomAudit.lean
