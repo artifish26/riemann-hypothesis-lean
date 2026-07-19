@@ -1,0 +1,4 @@
+/.lake/
+/.env
+__pycache__/
+*.py[cod]

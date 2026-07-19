@@ -1,0 +1,45 @@
+name: Release clean build
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Lean full build
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Restore Mathlib cache and build
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+          use-github-cache: false
+
+      - name: Check release endpoint axioms
+        run: lake env lean RELEASE/PublicationAxiomAudit.lean
+
+      - name: Run adversarial endpoint consumers
+        run: |
+          lake env lean ADVERSARIAL/EndpointAudit.lean
+          lake env lean ADVERSARIAL/A4BurnolFormulaBridgeAudit.lean

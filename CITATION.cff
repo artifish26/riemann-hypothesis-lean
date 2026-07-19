@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this formalisation, please cite the software release."
+type: software
+title: "Riemann Hypothesis Lean Formalisation"
+version: "0.1.0"
+date-released: 2026-07-19
+authors:
+  - name: "ArtiFish26"
+license: Apache-2.0
+repository-code: "https://github.com/artifish26/riemann-hypothesis-lean"
+url: "https://github.com/artifish26/riemann-hypothesis-lean"
+abstract: >-
+  A Lean and Mathlib formalisation of multiplicity-aware zero counting,
+  polynomial-Gaussian zero-side summability, a selected Guinand-Weil formula,
+  Li/Bombieri-Lagarias equivalences, and fixed-support Burnol positivity.
+  Global Weil/Li positivity and the Riemann Hypothesis remain open.
+keywords:
+  - Lean
+  - Mathlib
+  - Riemann zeta function
+  - Guinand-Weil explicit formula
+  - Li criterion
+  - formalised mathematics

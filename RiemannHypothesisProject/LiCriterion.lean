@@ -1,0 +1,36 @@
+import RiemannHypothesisProject.LocalRH
+import RiemannHypothesisProject.LiCriterion.CriticalLineGeometry
+import RiemannHypothesisProject.LiCriterion.SummandBounds
+import RiemannHypothesisProject.LiCriterion.Symmetry
+import RiemannHypothesisProject.LiCriterion.DyadicShells
+import RiemannHypothesisProject.LiCriterion.ShellCoefficient
+import RiemannHypothesisProject.LiCriterion.ResidualBridgeInput
+import RiemannHypothesisProject.LiCriterion.ZeroMultiset
+import RiemannHypothesisProject.LiCriterion.StarConvergence
+import RiemannHypothesisProject.LiCriterion.ZetaLiCoefficient
+import RiemannHypothesisProject.LiCriterion.BombieriLagariasCore
+import RiemannHypothesisProject.LiCriterion.BombieriLagariasDominant
+import RiemannHypothesisProject.LiCriterion.BombieriLagariasSelection
+import RiemannHypothesisProject.LiCriterion.BombieriLagarias
+import RiemannHypothesisProject.LiCriterion.ZetaBombieriLagariasSummability
+import RiemannHypothesisProject.LiCriterion.ZetaFunctionalReflection
+import RiemannHypothesisProject.LiCriterion.ZetaBombieriLagariasCriterion
+import RiemannHypothesisProject.LiCriterion.ZetaFunctionalMultiplicityReflection
+import RiemannHypothesisProject.LiCriterion.LiRationalBasis
+import RiemannHypothesisProject.LiCriterion.CutoffCovariance
+import RiemannHypothesisProject.LiCriterion.WeilPairing
+import RiemannHypothesisProject.SchwartzRiemannWeilPositivityPackages
+import Mathlib.Analysis.Complex.Basic
+import Mathlib.Analysis.SpecificLimits.Normed
+import Mathlib.Topology.Algebra.InfiniteSum.Order
+
+/-!
+# Li-style positivity criterion facade
+
+This compatibility facade re-exports the focused Li criterion geometry,
+summand-bound, symmetry, dyadic-shell, shell-coefficient, multiplicity-aware
+zero multiset, canonical star-convergence, full zeta Li coefficient, and
+Bombieri-Lagarias criterion, zeta criterion instance, multiplicity-aware Weil
+pairing, Lagarias rational basis, cutoff covariance, and residual-bridge
+modules.
+-/

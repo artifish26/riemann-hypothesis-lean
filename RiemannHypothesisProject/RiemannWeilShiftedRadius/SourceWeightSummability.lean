@@ -1,0 +1,15 @@
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.OneAddCore
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.OneAddWindowEndpoints
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.OneAddSummability
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.RealHeightTail
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.RealFourierTail
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.SingleComponentRealFourier
+import RiemannHypothesisProject.RiemannWeilShiftedRadius.SourceWeightSummability.RealFourierEndpoints
+
+/-!
+# Source-weight summability for shifted-radius certificates facade
+
+This compatibility facade re-exports the focused source-weight summability
+modules split by proof role: one-add bounds, window endpoints, real-height tails,
+real/Fourier tails, and final endpoint bridges.
+-/
