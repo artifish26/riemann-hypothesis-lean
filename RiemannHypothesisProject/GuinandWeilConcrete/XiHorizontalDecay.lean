@@ -564,7 +564,7 @@ theorem exists_canonicalXi_goodHeight_both_horizontalIntegral_bound
   rw [guinandWeilXi_horizontalIntegral_neg, norm_neg]
   exact hupper
 
-/-- Fixed-constant receiving surface: every sufficiently high unit
+/-- Fixed-constant M90 receiving surface: every sufficiently high unit
 interval contains a height at which both horizontal xi contour edges satisfy
 the same explicit Gaussian envelope. -/
 theorem exists_fixed_canonicalXi_goodHeight_both_horizontalIntegral_bound

@@ -26,7 +26,9 @@ that can be independently checked are:
 
 The release claims are deliberately narrower than the overall mathematical
 goal. In particular, the repository does not prove the Riemann Hypothesis.
-Global Li/Weil positivity remains open and RH-equivalent.
+The Suzuki S3 package is experimental and compact-window only; its source-norm
+statements estimate admitted solutions and do not construct the normalized
+X19B Fredholm family. Global Li/Weil positivity remains open and RH-equivalent.
 
 ## Responsibility and reproducibility
 

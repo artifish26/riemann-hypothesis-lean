@@ -1,0 +1,220 @@
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow00Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow01Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow02Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow03Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow04Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow05Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow06Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow07Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow08Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow09Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow10Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow11Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow12Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow13Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow14Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow15Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow16Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow17Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow18Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow19Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow20Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow21Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow22Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow23Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow24Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow25Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow26Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow27Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow28Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow29Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow30Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow31Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow32Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow33Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow34Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow35Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow36Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow37Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow38Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow39Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow40Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow41Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow42Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow43Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2EvenRow44Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow00Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow01Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow02Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow03Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow04Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow05Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow06Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow07Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow08Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow09Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow10Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow11Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow12Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow13Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow14Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow15Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow16Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow17Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow18Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow19Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow20Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow21Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow22Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow23Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow24Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow25Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow26Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow27Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow28Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow29Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow30Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow31Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow32Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow33Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow34Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow35Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow36Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow37Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow38Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow39Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow40Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow41Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow42Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStage2OddRow43Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualCertificateConsumer
+
+/-!
+# Parity-wide fixed-grid Stage-2 certificate admissions
+
+Generated by `df6d4_fixed_grid_stage2_admission_aggregate_generator.py`.
+This module composes the independently checked row theorems; it performs no
+new numerical evaluation.
+-/
+
+namespace RiemannHypothesisProject.Experiments.M100
+
+set_option maxRecDepth 100000
+
+theorem suzukiDF6D4FixedGridEvenStage2_admitted :
+    forall i j : Fin 45, i.val <= j.val ->
+      (suzukiDF6D4EvenResidualTargetCertificate.entry i j).lower <=
+          (FixedGridInterval.toRationalInterval
+            suzukiDF6D4FixedGridEvenStage2Denominator
+            (suzukiDF6D4FixedGridEvenStage2TargetEntry i j)).lower /\
+        (FixedGridInterval.toRationalInterval
+          suzukiDF6D4FixedGridEvenStage2Denominator
+          (suzukiDF6D4FixedGridEvenStage2TargetEntry i j)).upper <=
+          (suzukiDF6D4EvenResidualTargetCertificate.entry i j).upper := by
+  intro i j hij
+  fin_cases i
+  · exact suzukiDF6D4FixedGridEvenStage2Row00_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row01_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row02_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row03_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row04_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row05_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row06_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row07_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row08_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row09_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row10_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row11_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row12_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row13_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row14_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row15_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row16_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row17_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row18_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row19_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row20_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row21_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row22_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row23_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row24_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row25_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row26_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row27_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row28_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row29_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row30_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row31_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row32_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row33_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row34_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row35_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row36_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row37_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row38_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row39_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row40_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row41_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row42_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row43_admitted j hij
+  · exact suzukiDF6D4FixedGridEvenStage2Row44_admitted j hij
+
+
+theorem suzukiDF6D4FixedGridOddStage2_admitted :
+    forall i j : Fin 44, i.val <= j.val ->
+      (suzukiDF6D4OddResidualTargetCertificate.entry i j).lower <=
+          (FixedGridInterval.toRationalInterval
+            suzukiDF6D4FixedGridOddStage2Denominator
+            (suzukiDF6D4FixedGridOddStage2TargetEntry i j)).lower /\
+        (FixedGridInterval.toRationalInterval
+          suzukiDF6D4FixedGridOddStage2Denominator
+          (suzukiDF6D4FixedGridOddStage2TargetEntry i j)).upper <=
+          (suzukiDF6D4OddResidualTargetCertificate.entry i j).upper := by
+  intro i j hij
+  fin_cases i
+  · exact suzukiDF6D4FixedGridOddStage2Row00_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row01_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row02_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row03_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row04_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row05_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row06_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row07_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row08_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row09_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row10_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row11_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row12_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row13_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row14_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row15_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row16_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row17_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row18_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row19_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row20_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row21_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row22_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row23_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row24_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row25_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row26_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row27_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row28_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row29_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row30_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row31_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row32_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row33_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row34_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row35_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row36_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row37_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row38_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row39_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row40_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row41_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row42_admitted j hij
+  · exact suzukiDF6D4FixedGridOddStage2Row43_admitted j hij
+
+end RiemannHypothesisProject.Experiments.M100

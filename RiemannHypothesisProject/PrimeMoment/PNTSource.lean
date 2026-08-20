@@ -3,7 +3,7 @@ import PrimeNumberTheoremAnd.MediumPNT
 /-!
 # Prime-number-theorem source for the Li prime moments
 
-This module freezes the external source theorem used by the prime-moment
+This module freezes the external source theorem used by the M90 prime-moment
 lane.  Project-specific cutoff normalization belongs in the next bridge layer.
 -/
 

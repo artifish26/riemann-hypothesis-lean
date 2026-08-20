@@ -158,12 +158,12 @@ theorem mellin_riemannThetaKernel_eq_integral_Ioi (s : ℂ) :
   let G : ℝ → ℂ := fun x ↦
     (x : ℂ) ^ ((1 / 2 : ℂ) - s - 1) * riemannThetaKernel x
   have hF : IntegrableOn F (Ioi 0) := by
-    have h := ((HurwitzZeta.hurwitzEvenFEPair 0).toStrongFEPair.hasMellin s).1
+    have h := ((HurwitzZeta.hurwitzEvenFEPair 0).isStrongFEPair_toStrongFEPair.hasMellin s).1
     rw [MellinConvergent] at h
     simpa only [F, riemannThetaKernel, WeakFEPair.toStrongFEPair,
       smul_eq_mul] using h
   have hG : IntegrableOn G (Ioi 0) := by
-    have h := ((HurwitzZeta.hurwitzEvenFEPair 0).toStrongFEPair.hasMellin
+    have h := ((HurwitzZeta.hurwitzEvenFEPair 0).isStrongFEPair_toStrongFEPair.hasMellin
       ((1 / 2 : ℂ) - s)).1
     rw [MellinConvergent] at h
     simpa only [G, riemannThetaKernel, WeakFEPair.toStrongFEPair,

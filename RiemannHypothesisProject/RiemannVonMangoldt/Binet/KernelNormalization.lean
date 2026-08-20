@@ -74,8 +74,9 @@ theorem tendsto_bennettGammaBinetKernel_real_nhdsGT_zero :
     · filter_upwards with t
       exact hasDerivAt_id t
     · simp
-    · convert tendsto_nhdsWithin_of_tendsto_nhds
-        ((Real.continuous_exp.sub continuous_const).tendsto (0 : Real)) using 1 <;> norm_num
+    · have hnum : Continuous (fun t : Real => Real.exp t - 1) :=
+        Real.continuous_exp.sub continuous_const
+      simpa using tendsto_nhdsWithin_of_tendsto_nhds (hnum.tendsto 0)
     · exact tendsto_nhdsWithin_of_tendsto_nhds continuousAt_id
     · convert tendsto_nhdsWithin_of_tendsto_nhds
         (Real.continuous_exp.tendsto (0 : Real)) using 1 <;> norm_num

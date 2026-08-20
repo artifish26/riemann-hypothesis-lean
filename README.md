@@ -5,25 +5,38 @@ Riemann Hypothesis.
 
 > **This repository does not prove the Riemann Hypothesis.**
 
-It contains checked results about multiplicity-aware zero counting,
-polynomial-Gaussian zero-side summability, a selected Guinand-Weil formula,
-Li/Bombieri-Lagarias equivalences, and fixed-support Burnol positivity. The
-global positivity statement needed to conclude the Riemann Hypothesis remains
-open and is itself RH-equivalent.
+The production surface contains checked multiplicity-aware zero counting,
+polynomial-Gaussian zero-side summability, a selected Guinand--Weil formula,
+Li/Bombieri--Lagarias equivalences, and fixed-support Burnol positivity.
+Release `v0.2.0` additionally publishes the experimental Suzuki S3 milestone:
+compact-window coercivity has been connected to the genuine localized source
+form and associated operator on one named interval. Global positivity remains
+open and RH-equivalent.
 
-## Release scope
+## v0.2.0 release scope
 
-The principal release endpoints are documented in [CLAIMS.md](CLAIMS.md), with
-their exact Lean declaration names, assumptions, source files, and limits. The
-representative endpoint axiom report is defined in
-`RELEASE/PublicationAxiomAudit.lean`.
+The release has two deliberately separate surfaces:
 
-The independent red-team reports under `ADVERSARIAL/` trace the release claims,
-their assumptions, and their dependency boundaries. Their final verdict leaves
-global Li/Weil positivity open and RH-equivalent.
+| Surface | Status | Scope |
+|---|---|---|
+| Production theorem inventory | Checked | The six carried-forward results in [CLAIMS.md](CLAIMS.md); global Li/Weil positivity remains open |
+| Suzuki S3 milestone | Experimental, checked and independently closed | Source-compatible coercivity and solution estimates on `I_0 = [log(2)/2, suzukiProjectAStar]`, plus compact-support source-form and associated-operator identification |
+| X19B / S4 | Not started / not reached | A normalized fixed-gauge Fredholm family and bounded-window compact-parameter control are still required |
+| All-radius nondegeneracy | Open / `RH_HARD` | Not part of S3; equivalent to the unresolved global step |
+
+The exact declarations, assumptions, source files, and limitations are in
+[CLAIMS.md](CLAIMS.md). The focused S3 ledger is
+[RELEASE/SUZUKI_S3.md](RELEASE/SUZUKI_S3.md). Repeatable axiom reports are
+defined in `RELEASE/PublicationAxiomAudit.lean` and
+`RELEASE/SuzukiS3AxiomAudit.lean`.
+
+The independent reports under `ADVERSARIAL/` trace both the production claims
+and the S3 boundary. In particular, compact-window coercivity is not described
+as global Weil positivity, and a bound for an admitted Fredholm solution is
+not described as an existence theorem for the normalized X19B family.
 
 The source tree is a release snapshot. Private development history and
-unpublished working material are not included.
+unpublished working documents are not included.
 
 ## AI provenance
 
@@ -33,9 +46,9 @@ proof development, refactoring, and documentation were produced by AI. The
 maintainer is a software engineer, not a mathematician, and did not author the
 mathematics or Lean proofs.
 
-AI output is not treated as mathematical evidence. The reviewable evidence is
-the checked Lean source, its explicit premises, the dependency pins, successful
-builds, and the repeatable axiom report. See [AI_USE.md](AI_USE.md).
+AI output is not mathematical evidence. The reviewable evidence is the checked
+Lean source, explicit premises, dependency pins, exact certificate data,
+successful builds, and repeatable axiom reports. See [AI_USE.md](AI_USE.md).
 
 ## Build
 
@@ -45,22 +58,27 @@ Install [Elan](https://github.com/leanprover/elan) and Git, then run:
 lake exe cache get
 lake build
 lake env lean RELEASE/PublicationAxiomAudit.lean
+lake env lean RELEASE/SuzukiS3AxiomAudit.lean
+lake env lean ADVERSARIAL/S3EndpointAudit.lean
 ```
 
 The first command requires network access. Do not run `lake update` when
 reproducing the release: dependency revisions are pinned in
-`lake-manifest.json`.
-
-More detail and focused build commands are in
+`lake-manifest.json`. More detail is in
 [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
 ## Layout
 
 - `RiemannHypothesisProject/` contains the release source.
-- `RiemannHypothesisProject/Basic.lean` is the aggregate production import.
-- `RELEASE/PublicationAxiomAudit.lean` checks representative endpoint axioms.
-- `ADVERSARIAL/` contains independent claim audits and Lean audit consumers.
-- `.github/workflows/release-build.yml` performs a clean GitHub Actions build.
+- `RiemannHypothesisProject/Basic.lean` is the aggregate production import and
+  does not import `RiemannHypothesisProject/Experiments/`.
+- `RiemannHypothesisProject/Experiments/M100/` contains the checked S3 source
+  and its exact certificate data.
+- `tools/experiments/m100/` contains the associated certificate generators and
+  research probes; their output is not a release claim by itself.
+- `RELEASE/` contains the claim ledger and repeatable axiom audits.
+- `ADVERSARIAL/` contains independent claim audits and Lean consumers.
+- `.github/workflows/release-build.yml` performs a clean tagged build.
 
 ## Attribution
 

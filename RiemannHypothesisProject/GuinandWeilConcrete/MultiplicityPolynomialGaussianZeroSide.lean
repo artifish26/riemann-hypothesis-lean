@@ -271,12 +271,14 @@ theorem summable_norm_multiplicityPolynomialGaussianCompletedZetaZeroWeight
     {rho | Complex.im (rho : Complex) = 0}
   have hpositiveSubtype :
       Summable (fun rho : positiveSet => f rho.1) := by
-    simpa [positiveSet, f] using
+    change Summable (fun rho : PositiveOrdinateZetaZeroSubtype => f rho.1)
+    simpa [f] using
       summable_norm_positiveOrdinateMultiplicityPolynomialGaussianZeroWeight
         hpublished p
   have hnegativeSubtype :
       Summable (fun rho : negativeSet => f rho.1) := by
-    simpa [negativeSet, f] using
+    change Summable (fun rho : NegativeOrdinateZetaZeroSubtype => f rho.1)
+    simpa [f] using
       summable_norm_negativeOrdinateMultiplicityPolynomialGaussianZeroWeight
         hpublished p
   have hpositiveIndicator : Summable (positiveSet.indicator f) :=
@@ -408,10 +410,7 @@ theorem summable_multiplicityPolynomialGaussianNontrivialZetaZeroWeight
       hpublished p).subtype nontrivialZetaZeroSet
   refine hs.congr ?_
   intro rho
-  have hnotTrivial : ¬ IsTrivialZetaZero (rho : Complex) := by
-    have hprop := rho.property
-    change ¬ IsTrivialZetaZero (rho : Complex) at hprop
-    exact hprop
+  have hnotTrivial : ¬ IsTrivialZetaZero (rho.1 : Complex) := rho.property
   simp [multiplicityPolynomialGaussianNontrivialZetaZeroWeight,
     guinandWeilPiPolynomialGaussianCompletedZetaZeroWeight,
     hnotTrivial]
@@ -428,10 +427,7 @@ theorem summable_norm_multiplicityPolynomialGaussianNontrivialZetaZeroWeight
       hpublished p).subtype nontrivialZetaZeroSet
   refine hs.congr ?_
   intro rho
-  have hnotTrivial : ¬ IsTrivialZetaZero (rho : Complex) := by
-    have hprop := rho.property
-    change ¬ IsTrivialZetaZero (rho : Complex) at hprop
-    exact hprop
+  have hnotTrivial : ¬ IsTrivialZetaZero (rho.1 : Complex) := rho.property
   simp [multiplicityPolynomialGaussianNontrivialZetaZeroWeight,
     guinandWeilPiPolynomialGaussianCompletedZetaZeroWeight,
     hnotTrivial]
@@ -919,11 +915,13 @@ theorem summable_norm_multiplicityPolynomialGaussianCompletedZetaZeroWeight_of_g
   let negativeSet : Set ZetaZeroSubtype := {rho | Complex.im (rho : Complex) < 0}
   let axisSet : Set ZetaZeroSubtype := {rho | Complex.im (rho : Complex) = 0}
   have hpositiveSubtype : Summable (fun rho : positiveSet => f rho.1) := by
-    simpa [positiveSet, f] using
+    change Summable (fun rho : PositiveOrdinateZetaZeroSubtype => f rho.1)
+    simpa [f] using
       summable_norm_positiveOrdinateMultiplicityPolynomialGaussianZeroWeight_of_growth
         growth p
   have hnegativeSubtype : Summable (fun rho : negativeSet => f rho.1) := by
-    simpa [negativeSet, f] using
+    change Summable (fun rho : NegativeOrdinateZetaZeroSubtype => f rho.1)
+    simpa [f] using
       summable_norm_negativeOrdinateMultiplicityPolynomialGaussianZeroWeight_of_growth
         growth p
   have hpositiveIndicator : Summable (positiveSet.indicator f) :=

@@ -328,7 +328,8 @@ theorem denseRange_guinandWeilPiEvenPolynomialGaussianRealEvenLinearMap :
       (fun N => guinandWeilPiEvenPolynomialGaussianRealEvenLinearMap (p N))
       atTop (𝓝 f) := by
     rw [tendsto_subtype_rng]
-    simpa [guinandWeilPiEvenPolynomialGaussianRealEvenLinearMap] using hp
+    apply hp.congr'
+    exact Eventually.of_forall fun _ => rfl
   exact mem_closure_of_tendsto hsub
     (Eventually.of_forall fun N => Set.mem_range_self (p N))
 

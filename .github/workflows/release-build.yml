@@ -37,9 +37,17 @@ jobs:
           use-github-cache: false
 
       - name: Check release endpoint axioms
-        run: lake env lean RELEASE/PublicationAxiomAudit.lean
+        run: |
+          lake build \
+            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity \
+            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound \
+            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion \
+            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
+          lake env lean RELEASE/PublicationAxiomAudit.lean
+          lake env lean RELEASE/SuzukiS3AxiomAudit.lean
 
       - name: Run adversarial endpoint consumers
         run: |
           lake env lean ADVERSARIAL/EndpointAudit.lean
           lake env lean ADVERSARIAL/A4BurnolFormulaBridgeAudit.lean
+          lake env lean ADVERSARIAL/S3EndpointAudit.lean

@@ -104,15 +104,7 @@ theorem dirichletEtaParity_dft_zero :
 theorem dirichletEtaParity_dft_one :
     ZMod.dft dirichletEtaParity (1 : ZMod 2) = -2 := by
   rw [ZMod.dft_apply]
-  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by
-    ext j
-    fin_cases j
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inl rfl
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inr rfl]
+  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by rfl]
   have hchar : ZMod.stdAddChar (1 : ZMod 2) = (-1 : Complex) := by
     rw [show (1 : ZMod 2) = ((1 : Int) : ZMod 2) by rfl]
     rw [ZMod.stdAddChar_coe]
@@ -160,15 +152,7 @@ theorem dirichletEtaDftLFunction_eq_expZeta_sub_riemannZeta
       HurwitzZeta.expZeta (ZMod.toAddCircle (1 : ZMod 2)) s -
         riemannZeta s := by
   rw [ZMod.LFunction_dft dirichletEtaParity (Or.inr hs)]
-  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by
-    ext j
-    fin_cases j
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inl rfl
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inr rfl]
+  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by rfl]
   simp [dirichletEtaParity, HurwitzZeta.expZeta_zero,
     sub_eq_add_neg, add_comm]
 

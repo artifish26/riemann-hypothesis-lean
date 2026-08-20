@@ -1,0 +1,1083 @@
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard002Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard003Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard004Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard005Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard006Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard007Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard008Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard009Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard010Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard011Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard012Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard013Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard014Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard015Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard016Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard017Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard018Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard019Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard020Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard021Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard022Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard023Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard024Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard025Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard026Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard027Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard028Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard029Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard030Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard031Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard032Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard033Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard034Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard035Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard036Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard037Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard038Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard039Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard040Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard041Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard042Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard043Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard044Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard045Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard046Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard047Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard048Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard049Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard050Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard051Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard052Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard053Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard054Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard055Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard056Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard057Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard058Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard059Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard060Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard061Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard062Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard063Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard064Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard065Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard066Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard067Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard068Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard069Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard070Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard071Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard072Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard073Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard074Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard075Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard076Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard077Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard078Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard079Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard080Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard081Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard082Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard083Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard084Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard085Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard086Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard087Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard088Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard089Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard090Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard091Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard092Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard093Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard094Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard095Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard096Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard097Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard098Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard099Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard100Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard101Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard102Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard103Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard104Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard105Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard106Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard107Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard108Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard109Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard110Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard111Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard112Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard113Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard114Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard115Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard116Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard117Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard118Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard119Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard120Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard121Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard122Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard123Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard124Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard125Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard126Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard127Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard128Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard129Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard130Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard131Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard132Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard133Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard134Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard135Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard136Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard137Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard138Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard139Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard140Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard141Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard142Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard143Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard144Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard145Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard146Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard147Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard148Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard149Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard150Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard151Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard152Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard153Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard154Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard155Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard156Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard157Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard158Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard159Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard160Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard161Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard162Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard163Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard164Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard165Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard166Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard167Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard168Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard169Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard170Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard171Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard172Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard173Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard174Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard175Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard176Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard177Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard178Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard179Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard180Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard181Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard182Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard183Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard184Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard185Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard186Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard187Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard188Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard189Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard190Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard191Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard192Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard193Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard194Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard195Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard196Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard197Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard198Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard199Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard200Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard201Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard202Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard203Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard204Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard205Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard206Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard207Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard208Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard209Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard210Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard211Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard212Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard213Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard214Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard215Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard216Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard217Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard218Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard219Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard220Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard221Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard222Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard223Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard224Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard225Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard226Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard227Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard228Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard229Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard230Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard231Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard232Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard233Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard234Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard235Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard236Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard237Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard238Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard239Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard240Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard241Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard242Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard243Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard244Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard245Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard246Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard247Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard248Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard249Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard250Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard251Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard252Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard253Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard254Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard255Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard256Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard257Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard258Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard259Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard260Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard261Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard262Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard263Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard264Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard265Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard266Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard267Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard268Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard269Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard270Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard271Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard272Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard273Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard274Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard275Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard276Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard277Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard278Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard279Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard280Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard281Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard282Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard283Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard284Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard285Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard286Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard287Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard288Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard289Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard290Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard291Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard292Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard293Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard294Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard295Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard296Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard297Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard298Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard299Data
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridStageData
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualCertificateAssembly
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridSoundnessAggregate
+
+/-!
+# Shared materialized fixed-grid Stage-2 odd assembly
+
+Generated by `df6d4_fixed_grid_stage2_row_batch.py`.  The large literal
+dispatch and arithmetic definitions are compiled once here; row admission
+modules are deliberately thin consumers.
+-/
+
+namespace RiemannHypothesisProject.Experiments.M100
+
+set_option maxHeartbeats 0
+set_option maxRecDepth 100000
+
+def suzukiDF6D4FixedGridOddStage2Denominator : Nat :=
+  1000000000000000000
+
+private def coefficientDenominator : Nat := 1000000000000000000000000
+
+private def coefficientNumerator (k i : Nat) : Int :=
+  let q := suzukiDF6D4OddGalerkinApproximantData[
+    k * 44 + i]!
+  q.num * ((coefficientDenominator / q.den : Nat) : Int)
+
+private def solveEntry (row : Fin 256) (column : Fin 44) :
+    FixedGridInterval :=
+  match row.val with
+    | 0 => suzukiDF6D4FixedGridOddStage1SolveRow00Data[column.val]!
+    | 1 => suzukiDF6D4FixedGridOddStage1SolveRow01Data[column.val]!
+    | 2 => suzukiDF6D4FixedGridShard002OddSolveData[column.val]!
+    | 3 => suzukiDF6D4FixedGridShard003OddSolveData[column.val]!
+    | 4 => suzukiDF6D4FixedGridShard004OddSolveData[column.val]!
+    | 5 => suzukiDF6D4FixedGridShard005OddSolveData[column.val]!
+    | 6 => suzukiDF6D4FixedGridShard006OddSolveData[column.val]!
+    | 7 => suzukiDF6D4FixedGridShard007OddSolveData[column.val]!
+    | 8 => suzukiDF6D4FixedGridShard008OddSolveData[column.val]!
+    | 9 => suzukiDF6D4FixedGridShard009OddSolveData[column.val]!
+    | 10 => suzukiDF6D4FixedGridShard010OddSolveData[column.val]!
+    | 11 => suzukiDF6D4FixedGridShard011OddSolveData[column.val]!
+    | 12 => suzukiDF6D4FixedGridShard012OddSolveData[column.val]!
+    | 13 => suzukiDF6D4FixedGridShard013OddSolveData[column.val]!
+    | 14 => suzukiDF6D4FixedGridShard014OddSolveData[column.val]!
+    | 15 => suzukiDF6D4FixedGridShard015OddSolveData[column.val]!
+    | 16 => suzukiDF6D4FixedGridShard016OddSolveData[column.val]!
+    | 17 => suzukiDF6D4FixedGridShard017OddSolveData[column.val]!
+    | 18 => suzukiDF6D4FixedGridShard018OddSolveData[column.val]!
+    | 19 => suzukiDF6D4FixedGridShard019OddSolveData[column.val]!
+    | 20 => suzukiDF6D4FixedGridShard020OddSolveData[column.val]!
+    | 21 => suzukiDF6D4FixedGridShard021OddSolveData[column.val]!
+    | 22 => suzukiDF6D4FixedGridShard022OddSolveData[column.val]!
+    | 23 => suzukiDF6D4FixedGridShard023OddSolveData[column.val]!
+    | 24 => suzukiDF6D4FixedGridShard024OddSolveData[column.val]!
+    | 25 => suzukiDF6D4FixedGridShard025OddSolveData[column.val]!
+    | 26 => suzukiDF6D4FixedGridShard026OddSolveData[column.val]!
+    | 27 => suzukiDF6D4FixedGridShard027OddSolveData[column.val]!
+    | 28 => suzukiDF6D4FixedGridShard028OddSolveData[column.val]!
+    | 29 => suzukiDF6D4FixedGridShard029OddSolveData[column.val]!
+    | 30 => suzukiDF6D4FixedGridShard030OddSolveData[column.val]!
+    | 31 => suzukiDF6D4FixedGridShard031OddSolveData[column.val]!
+    | 32 => suzukiDF6D4FixedGridShard032OddSolveData[column.val]!
+    | 33 => suzukiDF6D4FixedGridShard033OddSolveData[column.val]!
+    | 34 => suzukiDF6D4FixedGridShard034OddSolveData[column.val]!
+    | 35 => suzukiDF6D4FixedGridShard035OddSolveData[column.val]!
+    | 36 => suzukiDF6D4FixedGridShard036OddSolveData[column.val]!
+    | 37 => suzukiDF6D4FixedGridShard037OddSolveData[column.val]!
+    | 38 => suzukiDF6D4FixedGridShard038OddSolveData[column.val]!
+    | 39 => suzukiDF6D4FixedGridShard039OddSolveData[column.val]!
+    | 40 => suzukiDF6D4FixedGridShard040OddSolveData[column.val]!
+    | 41 => suzukiDF6D4FixedGridShard041OddSolveData[column.val]!
+    | 42 => suzukiDF6D4FixedGridShard042OddSolveData[column.val]!
+    | 43 => suzukiDF6D4FixedGridShard043OddSolveData[column.val]!
+    | 44 => suzukiDF6D4FixedGridShard044OddSolveData[column.val]!
+    | 45 => suzukiDF6D4FixedGridShard045OddSolveData[column.val]!
+    | 46 => suzukiDF6D4FixedGridShard046OddSolveData[column.val]!
+    | 47 => suzukiDF6D4FixedGridShard047OddSolveData[column.val]!
+    | 48 => suzukiDF6D4FixedGridShard048OddSolveData[column.val]!
+    | 49 => suzukiDF6D4FixedGridShard049OddSolveData[column.val]!
+    | 50 => suzukiDF6D4FixedGridShard050OddSolveData[column.val]!
+    | 51 => suzukiDF6D4FixedGridShard051OddSolveData[column.val]!
+    | 52 => suzukiDF6D4FixedGridShard052OddSolveData[column.val]!
+    | 53 => suzukiDF6D4FixedGridShard053OddSolveData[column.val]!
+    | 54 => suzukiDF6D4FixedGridShard054OddSolveData[column.val]!
+    | 55 => suzukiDF6D4FixedGridShard055OddSolveData[column.val]!
+    | 56 => suzukiDF6D4FixedGridShard056OddSolveData[column.val]!
+    | 57 => suzukiDF6D4FixedGridShard057OddSolveData[column.val]!
+    | 58 => suzukiDF6D4FixedGridShard058OddSolveData[column.val]!
+    | 59 => suzukiDF6D4FixedGridShard059OddSolveData[column.val]!
+    | 60 => suzukiDF6D4FixedGridShard060OddSolveData[column.val]!
+    | 61 => suzukiDF6D4FixedGridShard061OddSolveData[column.val]!
+    | 62 => suzukiDF6D4FixedGridShard062OddSolveData[column.val]!
+    | 63 => suzukiDF6D4FixedGridShard063OddSolveData[column.val]!
+    | 64 => suzukiDF6D4FixedGridShard064OddSolveData[column.val]!
+    | 65 => suzukiDF6D4FixedGridShard065OddSolveData[column.val]!
+    | 66 => suzukiDF6D4FixedGridShard066OddSolveData[column.val]!
+    | 67 => suzukiDF6D4FixedGridShard067OddSolveData[column.val]!
+    | 68 => suzukiDF6D4FixedGridShard068OddSolveData[column.val]!
+    | 69 => suzukiDF6D4FixedGridShard069OddSolveData[column.val]!
+    | 70 => suzukiDF6D4FixedGridShard070OddSolveData[column.val]!
+    | 71 => suzukiDF6D4FixedGridShard071OddSolveData[column.val]!
+    | 72 => suzukiDF6D4FixedGridShard072OddSolveData[column.val]!
+    | 73 => suzukiDF6D4FixedGridShard073OddSolveData[column.val]!
+    | 74 => suzukiDF6D4FixedGridShard074OddSolveData[column.val]!
+    | 75 => suzukiDF6D4FixedGridShard075OddSolveData[column.val]!
+    | 76 => suzukiDF6D4FixedGridShard076OddSolveData[column.val]!
+    | 77 => suzukiDF6D4FixedGridShard077OddSolveData[column.val]!
+    | 78 => suzukiDF6D4FixedGridShard078OddSolveData[column.val]!
+    | 79 => suzukiDF6D4FixedGridShard079OddSolveData[column.val]!
+    | 80 => suzukiDF6D4FixedGridShard080OddSolveData[column.val]!
+    | 81 => suzukiDF6D4FixedGridShard081OddSolveData[column.val]!
+    | 82 => suzukiDF6D4FixedGridShard082OddSolveData[column.val]!
+    | 83 => suzukiDF6D4FixedGridShard083OddSolveData[column.val]!
+    | 84 => suzukiDF6D4FixedGridShard084OddSolveData[column.val]!
+    | 85 => suzukiDF6D4FixedGridShard085OddSolveData[column.val]!
+    | 86 => suzukiDF6D4FixedGridShard086OddSolveData[column.val]!
+    | 87 => suzukiDF6D4FixedGridShard087OddSolveData[column.val]!
+    | 88 => suzukiDF6D4FixedGridShard088OddSolveData[column.val]!
+    | 89 => suzukiDF6D4FixedGridShard089OddSolveData[column.val]!
+    | 90 => suzukiDF6D4FixedGridShard090OddSolveData[column.val]!
+    | 91 => suzukiDF6D4FixedGridShard091OddSolveData[column.val]!
+    | 92 => suzukiDF6D4FixedGridShard092OddSolveData[column.val]!
+    | 93 => suzukiDF6D4FixedGridShard093OddSolveData[column.val]!
+    | 94 => suzukiDF6D4FixedGridShard094OddSolveData[column.val]!
+    | 95 => suzukiDF6D4FixedGridShard095OddSolveData[column.val]!
+    | 96 => suzukiDF6D4FixedGridShard096OddSolveData[column.val]!
+    | 97 => suzukiDF6D4FixedGridShard097OddSolveData[column.val]!
+    | 98 => suzukiDF6D4FixedGridShard098OddSolveData[column.val]!
+    | 99 => suzukiDF6D4FixedGridShard099OddSolveData[column.val]!
+    | 100 => suzukiDF6D4FixedGridShard100OddSolveData[column.val]!
+    | 101 => suzukiDF6D4FixedGridShard101OddSolveData[column.val]!
+    | 102 => suzukiDF6D4FixedGridShard102OddSolveData[column.val]!
+    | 103 => suzukiDF6D4FixedGridShard103OddSolveData[column.val]!
+    | 104 => suzukiDF6D4FixedGridShard104OddSolveData[column.val]!
+    | 105 => suzukiDF6D4FixedGridShard105OddSolveData[column.val]!
+    | 106 => suzukiDF6D4FixedGridShard106OddSolveData[column.val]!
+    | 107 => suzukiDF6D4FixedGridShard107OddSolveData[column.val]!
+    | 108 => suzukiDF6D4FixedGridShard108OddSolveData[column.val]!
+    | 109 => suzukiDF6D4FixedGridShard109OddSolveData[column.val]!
+    | 110 => suzukiDF6D4FixedGridShard110OddSolveData[column.val]!
+    | 111 => suzukiDF6D4FixedGridShard111OddSolveData[column.val]!
+    | 112 => suzukiDF6D4FixedGridShard112OddSolveData[column.val]!
+    | 113 => suzukiDF6D4FixedGridShard113OddSolveData[column.val]!
+    | 114 => suzukiDF6D4FixedGridShard114OddSolveData[column.val]!
+    | 115 => suzukiDF6D4FixedGridShard115OddSolveData[column.val]!
+    | 116 => suzukiDF6D4FixedGridShard116OddSolveData[column.val]!
+    | 117 => suzukiDF6D4FixedGridShard117OddSolveData[column.val]!
+    | 118 => suzukiDF6D4FixedGridShard118OddSolveData[column.val]!
+    | 119 => suzukiDF6D4FixedGridShard119OddSolveData[column.val]!
+    | 120 => suzukiDF6D4FixedGridShard120OddSolveData[column.val]!
+    | 121 => suzukiDF6D4FixedGridShard121OddSolveData[column.val]!
+    | 122 => suzukiDF6D4FixedGridShard122OddSolveData[column.val]!
+    | 123 => suzukiDF6D4FixedGridShard123OddSolveData[column.val]!
+    | 124 => suzukiDF6D4FixedGridShard124OddSolveData[column.val]!
+    | 125 => suzukiDF6D4FixedGridShard125OddSolveData[column.val]!
+    | 126 => suzukiDF6D4FixedGridShard126OddSolveData[column.val]!
+    | 127 => suzukiDF6D4FixedGridShard127OddSolveData[column.val]!
+    | 128 => suzukiDF6D4FixedGridShard128OddSolveData[column.val]!
+    | 129 => suzukiDF6D4FixedGridShard129OddSolveData[column.val]!
+    | 130 => suzukiDF6D4FixedGridShard130OddSolveData[column.val]!
+    | 131 => suzukiDF6D4FixedGridShard131OddSolveData[column.val]!
+    | 132 => suzukiDF6D4FixedGridShard132OddSolveData[column.val]!
+    | 133 => suzukiDF6D4FixedGridShard133OddSolveData[column.val]!
+    | 134 => suzukiDF6D4FixedGridShard134OddSolveData[column.val]!
+    | 135 => suzukiDF6D4FixedGridShard135OddSolveData[column.val]!
+    | 136 => suzukiDF6D4FixedGridShard136OddSolveData[column.val]!
+    | 137 => suzukiDF6D4FixedGridShard137OddSolveData[column.val]!
+    | 138 => suzukiDF6D4FixedGridShard138OddSolveData[column.val]!
+    | 139 => suzukiDF6D4FixedGridShard139OddSolveData[column.val]!
+    | 140 => suzukiDF6D4FixedGridShard140OddSolveData[column.val]!
+    | 141 => suzukiDF6D4FixedGridShard141OddSolveData[column.val]!
+    | 142 => suzukiDF6D4FixedGridShard142OddSolveData[column.val]!
+    | 143 => suzukiDF6D4FixedGridShard143OddSolveData[column.val]!
+    | 144 => suzukiDF6D4FixedGridShard144OddSolveData[column.val]!
+    | 145 => suzukiDF6D4FixedGridShard145OddSolveData[column.val]!
+    | 146 => suzukiDF6D4FixedGridShard146OddSolveData[column.val]!
+    | 147 => suzukiDF6D4FixedGridShard147OddSolveData[column.val]!
+    | 148 => suzukiDF6D4FixedGridShard148OddSolveData[column.val]!
+    | 149 => suzukiDF6D4FixedGridShard149OddSolveData[column.val]!
+    | 150 => suzukiDF6D4FixedGridShard150OddSolveData[column.val]!
+    | 151 => suzukiDF6D4FixedGridShard151OddSolveData[column.val]!
+    | 152 => suzukiDF6D4FixedGridShard152OddSolveData[column.val]!
+    | 153 => suzukiDF6D4FixedGridShard153OddSolveData[column.val]!
+    | 154 => suzukiDF6D4FixedGridShard154OddSolveData[column.val]!
+    | 155 => suzukiDF6D4FixedGridShard155OddSolveData[column.val]!
+    | 156 => suzukiDF6D4FixedGridShard156OddSolveData[column.val]!
+    | 157 => suzukiDF6D4FixedGridShard157OddSolveData[column.val]!
+    | 158 => suzukiDF6D4FixedGridShard158OddSolveData[column.val]!
+    | 159 => suzukiDF6D4FixedGridShard159OddSolveData[column.val]!
+    | 160 => suzukiDF6D4FixedGridShard160OddSolveData[column.val]!
+    | 161 => suzukiDF6D4FixedGridShard161OddSolveData[column.val]!
+    | 162 => suzukiDF6D4FixedGridShard162OddSolveData[column.val]!
+    | 163 => suzukiDF6D4FixedGridShard163OddSolveData[column.val]!
+    | 164 => suzukiDF6D4FixedGridShard164OddSolveData[column.val]!
+    | 165 => suzukiDF6D4FixedGridShard165OddSolveData[column.val]!
+    | 166 => suzukiDF6D4FixedGridShard166OddSolveData[column.val]!
+    | 167 => suzukiDF6D4FixedGridShard167OddSolveData[column.val]!
+    | 168 => suzukiDF6D4FixedGridShard168OddSolveData[column.val]!
+    | 169 => suzukiDF6D4FixedGridShard169OddSolveData[column.val]!
+    | 170 => suzukiDF6D4FixedGridShard170OddSolveData[column.val]!
+    | 171 => suzukiDF6D4FixedGridShard171OddSolveData[column.val]!
+    | 172 => suzukiDF6D4FixedGridShard172OddSolveData[column.val]!
+    | 173 => suzukiDF6D4FixedGridShard173OddSolveData[column.val]!
+    | 174 => suzukiDF6D4FixedGridShard174OddSolveData[column.val]!
+    | 175 => suzukiDF6D4FixedGridShard175OddSolveData[column.val]!
+    | 176 => suzukiDF6D4FixedGridShard176OddSolveData[column.val]!
+    | 177 => suzukiDF6D4FixedGridShard177OddSolveData[column.val]!
+    | 178 => suzukiDF6D4FixedGridShard178OddSolveData[column.val]!
+    | 179 => suzukiDF6D4FixedGridShard179OddSolveData[column.val]!
+    | 180 => suzukiDF6D4FixedGridShard180OddSolveData[column.val]!
+    | 181 => suzukiDF6D4FixedGridShard181OddSolveData[column.val]!
+    | 182 => suzukiDF6D4FixedGridShard182OddSolveData[column.val]!
+    | 183 => suzukiDF6D4FixedGridShard183OddSolveData[column.val]!
+    | 184 => suzukiDF6D4FixedGridShard184OddSolveData[column.val]!
+    | 185 => suzukiDF6D4FixedGridShard185OddSolveData[column.val]!
+    | 186 => suzukiDF6D4FixedGridShard186OddSolveData[column.val]!
+    | 187 => suzukiDF6D4FixedGridShard187OddSolveData[column.val]!
+    | 188 => suzukiDF6D4FixedGridShard188OddSolveData[column.val]!
+    | 189 => suzukiDF6D4FixedGridShard189OddSolveData[column.val]!
+    | 190 => suzukiDF6D4FixedGridShard190OddSolveData[column.val]!
+    | 191 => suzukiDF6D4FixedGridShard191OddSolveData[column.val]!
+    | 192 => suzukiDF6D4FixedGridShard192OddSolveData[column.val]!
+    | 193 => suzukiDF6D4FixedGridShard193OddSolveData[column.val]!
+    | 194 => suzukiDF6D4FixedGridShard194OddSolveData[column.val]!
+    | 195 => suzukiDF6D4FixedGridShard195OddSolveData[column.val]!
+    | 196 => suzukiDF6D4FixedGridShard196OddSolveData[column.val]!
+    | 197 => suzukiDF6D4FixedGridShard197OddSolveData[column.val]!
+    | 198 => suzukiDF6D4FixedGridShard198OddSolveData[column.val]!
+    | 199 => suzukiDF6D4FixedGridShard199OddSolveData[column.val]!
+    | 200 => suzukiDF6D4FixedGridShard200OddSolveData[column.val]!
+    | 201 => suzukiDF6D4FixedGridShard201OddSolveData[column.val]!
+    | 202 => suzukiDF6D4FixedGridShard202OddSolveData[column.val]!
+    | 203 => suzukiDF6D4FixedGridShard203OddSolveData[column.val]!
+    | 204 => suzukiDF6D4FixedGridShard204OddSolveData[column.val]!
+    | 205 => suzukiDF6D4FixedGridShard205OddSolveData[column.val]!
+    | 206 => suzukiDF6D4FixedGridShard206OddSolveData[column.val]!
+    | 207 => suzukiDF6D4FixedGridShard207OddSolveData[column.val]!
+    | 208 => suzukiDF6D4FixedGridShard208OddSolveData[column.val]!
+    | 209 => suzukiDF6D4FixedGridShard209OddSolveData[column.val]!
+    | 210 => suzukiDF6D4FixedGridShard210OddSolveData[column.val]!
+    | 211 => suzukiDF6D4FixedGridShard211OddSolveData[column.val]!
+    | 212 => suzukiDF6D4FixedGridShard212OddSolveData[column.val]!
+    | 213 => suzukiDF6D4FixedGridShard213OddSolveData[column.val]!
+    | 214 => suzukiDF6D4FixedGridShard214OddSolveData[column.val]!
+    | 215 => suzukiDF6D4FixedGridShard215OddSolveData[column.val]!
+    | 216 => suzukiDF6D4FixedGridShard216OddSolveData[column.val]!
+    | 217 => suzukiDF6D4FixedGridShard217OddSolveData[column.val]!
+    | 218 => suzukiDF6D4FixedGridShard218OddSolveData[column.val]!
+    | 219 => suzukiDF6D4FixedGridShard219OddSolveData[column.val]!
+    | 220 => suzukiDF6D4FixedGridShard220OddSolveData[column.val]!
+    | 221 => suzukiDF6D4FixedGridShard221OddSolveData[column.val]!
+    | 222 => suzukiDF6D4FixedGridShard222OddSolveData[column.val]!
+    | 223 => suzukiDF6D4FixedGridShard223OddSolveData[column.val]!
+    | 224 => suzukiDF6D4FixedGridShard224OddSolveData[column.val]!
+    | 225 => suzukiDF6D4FixedGridShard225OddSolveData[column.val]!
+    | 226 => suzukiDF6D4FixedGridShard226OddSolveData[column.val]!
+    | 227 => suzukiDF6D4FixedGridShard227OddSolveData[column.val]!
+    | 228 => suzukiDF6D4FixedGridShard228OddSolveData[column.val]!
+    | 229 => suzukiDF6D4FixedGridShard229OddSolveData[column.val]!
+    | 230 => suzukiDF6D4FixedGridShard230OddSolveData[column.val]!
+    | 231 => suzukiDF6D4FixedGridShard231OddSolveData[column.val]!
+    | 232 => suzukiDF6D4FixedGridShard232OddSolveData[column.val]!
+    | 233 => suzukiDF6D4FixedGridShard233OddSolveData[column.val]!
+    | 234 => suzukiDF6D4FixedGridShard234OddSolveData[column.val]!
+    | 235 => suzukiDF6D4FixedGridShard235OddSolveData[column.val]!
+    | 236 => suzukiDF6D4FixedGridShard236OddSolveData[column.val]!
+    | 237 => suzukiDF6D4FixedGridShard237OddSolveData[column.val]!
+    | 238 => suzukiDF6D4FixedGridShard238OddSolveData[column.val]!
+    | 239 => suzukiDF6D4FixedGridShard239OddSolveData[column.val]!
+    | 240 => suzukiDF6D4FixedGridShard240OddSolveData[column.val]!
+    | 241 => suzukiDF6D4FixedGridShard241OddSolveData[column.val]!
+    | 242 => suzukiDF6D4FixedGridShard242OddSolveData[column.val]!
+    | 243 => suzukiDF6D4FixedGridShard243OddSolveData[column.val]!
+    | 244 => suzukiDF6D4FixedGridShard244OddSolveData[column.val]!
+    | 245 => suzukiDF6D4FixedGridShard245OddSolveData[column.val]!
+    | 246 => suzukiDF6D4FixedGridShard246OddSolveData[column.val]!
+    | 247 => suzukiDF6D4FixedGridShard247OddSolveData[column.val]!
+    | 248 => suzukiDF6D4FixedGridShard248OddSolveData[column.val]!
+    | 249 => suzukiDF6D4FixedGridShard249OddSolveData[column.val]!
+    | 250 => suzukiDF6D4FixedGridShard250OddSolveData[column.val]!
+    | 251 => suzukiDF6D4FixedGridShard251OddSolveData[column.val]!
+    | 252 => suzukiDF6D4FixedGridShard252OddSolveData[column.val]!
+    | 253 => suzukiDF6D4FixedGridShard253OddSolveData[column.val]!
+    | 254 => suzukiDF6D4FixedGridShard254OddSolveData[column.val]!
+    | 255 => suzukiDF6D4FixedGridShard255OddSolveData[column.val]!
+    | _ => default
+
+private def residualEntry (row : Fin 300) (column : Fin 44) :
+    FixedGridInterval :=
+  match row.val with
+    | 0 => suzukiDF6D4FixedGridOddStage1ResidualRow301Data[column.val]!
+    | 1 => suzukiDF6D4FixedGridOddStage1ResidualRow302Data[column.val]!
+    | 2 => suzukiDF6D4FixedGridShard002OddResidualData[column.val]!
+    | 3 => suzukiDF6D4FixedGridShard003OddResidualData[column.val]!
+    | 4 => suzukiDF6D4FixedGridShard004OddResidualData[column.val]!
+    | 5 => suzukiDF6D4FixedGridShard005OddResidualData[column.val]!
+    | 6 => suzukiDF6D4FixedGridShard006OddResidualData[column.val]!
+    | 7 => suzukiDF6D4FixedGridShard007OddResidualData[column.val]!
+    | 8 => suzukiDF6D4FixedGridShard008OddResidualData[column.val]!
+    | 9 => suzukiDF6D4FixedGridShard009OddResidualData[column.val]!
+    | 10 => suzukiDF6D4FixedGridShard010OddResidualData[column.val]!
+    | 11 => suzukiDF6D4FixedGridShard011OddResidualData[column.val]!
+    | 12 => suzukiDF6D4FixedGridShard012OddResidualData[column.val]!
+    | 13 => suzukiDF6D4FixedGridShard013OddResidualData[column.val]!
+    | 14 => suzukiDF6D4FixedGridShard014OddResidualData[column.val]!
+    | 15 => suzukiDF6D4FixedGridShard015OddResidualData[column.val]!
+    | 16 => suzukiDF6D4FixedGridShard016OddResidualData[column.val]!
+    | 17 => suzukiDF6D4FixedGridShard017OddResidualData[column.val]!
+    | 18 => suzukiDF6D4FixedGridShard018OddResidualData[column.val]!
+    | 19 => suzukiDF6D4FixedGridShard019OddResidualData[column.val]!
+    | 20 => suzukiDF6D4FixedGridShard020OddResidualData[column.val]!
+    | 21 => suzukiDF6D4FixedGridShard021OddResidualData[column.val]!
+    | 22 => suzukiDF6D4FixedGridShard022OddResidualData[column.val]!
+    | 23 => suzukiDF6D4FixedGridShard023OddResidualData[column.val]!
+    | 24 => suzukiDF6D4FixedGridShard024OddResidualData[column.val]!
+    | 25 => suzukiDF6D4FixedGridShard025OddResidualData[column.val]!
+    | 26 => suzukiDF6D4FixedGridShard026OddResidualData[column.val]!
+    | 27 => suzukiDF6D4FixedGridShard027OddResidualData[column.val]!
+    | 28 => suzukiDF6D4FixedGridShard028OddResidualData[column.val]!
+    | 29 => suzukiDF6D4FixedGridShard029OddResidualData[column.val]!
+    | 30 => suzukiDF6D4FixedGridShard030OddResidualData[column.val]!
+    | 31 => suzukiDF6D4FixedGridShard031OddResidualData[column.val]!
+    | 32 => suzukiDF6D4FixedGridShard032OddResidualData[column.val]!
+    | 33 => suzukiDF6D4FixedGridShard033OddResidualData[column.val]!
+    | 34 => suzukiDF6D4FixedGridShard034OddResidualData[column.val]!
+    | 35 => suzukiDF6D4FixedGridShard035OddResidualData[column.val]!
+    | 36 => suzukiDF6D4FixedGridShard036OddResidualData[column.val]!
+    | 37 => suzukiDF6D4FixedGridShard037OddResidualData[column.val]!
+    | 38 => suzukiDF6D4FixedGridShard038OddResidualData[column.val]!
+    | 39 => suzukiDF6D4FixedGridShard039OddResidualData[column.val]!
+    | 40 => suzukiDF6D4FixedGridShard040OddResidualData[column.val]!
+    | 41 => suzukiDF6D4FixedGridShard041OddResidualData[column.val]!
+    | 42 => suzukiDF6D4FixedGridShard042OddResidualData[column.val]!
+    | 43 => suzukiDF6D4FixedGridShard043OddResidualData[column.val]!
+    | 44 => suzukiDF6D4FixedGridShard044OddResidualData[column.val]!
+    | 45 => suzukiDF6D4FixedGridShard045OddResidualData[column.val]!
+    | 46 => suzukiDF6D4FixedGridShard046OddResidualData[column.val]!
+    | 47 => suzukiDF6D4FixedGridShard047OddResidualData[column.val]!
+    | 48 => suzukiDF6D4FixedGridShard048OddResidualData[column.val]!
+    | 49 => suzukiDF6D4FixedGridShard049OddResidualData[column.val]!
+    | 50 => suzukiDF6D4FixedGridShard050OddResidualData[column.val]!
+    | 51 => suzukiDF6D4FixedGridShard051OddResidualData[column.val]!
+    | 52 => suzukiDF6D4FixedGridShard052OddResidualData[column.val]!
+    | 53 => suzukiDF6D4FixedGridShard053OddResidualData[column.val]!
+    | 54 => suzukiDF6D4FixedGridShard054OddResidualData[column.val]!
+    | 55 => suzukiDF6D4FixedGridShard055OddResidualData[column.val]!
+    | 56 => suzukiDF6D4FixedGridShard056OddResidualData[column.val]!
+    | 57 => suzukiDF6D4FixedGridShard057OddResidualData[column.val]!
+    | 58 => suzukiDF6D4FixedGridShard058OddResidualData[column.val]!
+    | 59 => suzukiDF6D4FixedGridShard059OddResidualData[column.val]!
+    | 60 => suzukiDF6D4FixedGridShard060OddResidualData[column.val]!
+    | 61 => suzukiDF6D4FixedGridShard061OddResidualData[column.val]!
+    | 62 => suzukiDF6D4FixedGridShard062OddResidualData[column.val]!
+    | 63 => suzukiDF6D4FixedGridShard063OddResidualData[column.val]!
+    | 64 => suzukiDF6D4FixedGridShard064OddResidualData[column.val]!
+    | 65 => suzukiDF6D4FixedGridShard065OddResidualData[column.val]!
+    | 66 => suzukiDF6D4FixedGridShard066OddResidualData[column.val]!
+    | 67 => suzukiDF6D4FixedGridShard067OddResidualData[column.val]!
+    | 68 => suzukiDF6D4FixedGridShard068OddResidualData[column.val]!
+    | 69 => suzukiDF6D4FixedGridShard069OddResidualData[column.val]!
+    | 70 => suzukiDF6D4FixedGridShard070OddResidualData[column.val]!
+    | 71 => suzukiDF6D4FixedGridShard071OddResidualData[column.val]!
+    | 72 => suzukiDF6D4FixedGridShard072OddResidualData[column.val]!
+    | 73 => suzukiDF6D4FixedGridShard073OddResidualData[column.val]!
+    | 74 => suzukiDF6D4FixedGridShard074OddResidualData[column.val]!
+    | 75 => suzukiDF6D4FixedGridShard075OddResidualData[column.val]!
+    | 76 => suzukiDF6D4FixedGridShard076OddResidualData[column.val]!
+    | 77 => suzukiDF6D4FixedGridShard077OddResidualData[column.val]!
+    | 78 => suzukiDF6D4FixedGridShard078OddResidualData[column.val]!
+    | 79 => suzukiDF6D4FixedGridShard079OddResidualData[column.val]!
+    | 80 => suzukiDF6D4FixedGridShard080OddResidualData[column.val]!
+    | 81 => suzukiDF6D4FixedGridShard081OddResidualData[column.val]!
+    | 82 => suzukiDF6D4FixedGridShard082OddResidualData[column.val]!
+    | 83 => suzukiDF6D4FixedGridShard083OddResidualData[column.val]!
+    | 84 => suzukiDF6D4FixedGridShard084OddResidualData[column.val]!
+    | 85 => suzukiDF6D4FixedGridShard085OddResidualData[column.val]!
+    | 86 => suzukiDF6D4FixedGridShard086OddResidualData[column.val]!
+    | 87 => suzukiDF6D4FixedGridShard087OddResidualData[column.val]!
+    | 88 => suzukiDF6D4FixedGridShard088OddResidualData[column.val]!
+    | 89 => suzukiDF6D4FixedGridShard089OddResidualData[column.val]!
+    | 90 => suzukiDF6D4FixedGridShard090OddResidualData[column.val]!
+    | 91 => suzukiDF6D4FixedGridShard091OddResidualData[column.val]!
+    | 92 => suzukiDF6D4FixedGridShard092OddResidualData[column.val]!
+    | 93 => suzukiDF6D4FixedGridShard093OddResidualData[column.val]!
+    | 94 => suzukiDF6D4FixedGridShard094OddResidualData[column.val]!
+    | 95 => suzukiDF6D4FixedGridShard095OddResidualData[column.val]!
+    | 96 => suzukiDF6D4FixedGridShard096OddResidualData[column.val]!
+    | 97 => suzukiDF6D4FixedGridShard097OddResidualData[column.val]!
+    | 98 => suzukiDF6D4FixedGridShard098OddResidualData[column.val]!
+    | 99 => suzukiDF6D4FixedGridShard099OddResidualData[column.val]!
+    | 100 => suzukiDF6D4FixedGridShard100OddResidualData[column.val]!
+    | 101 => suzukiDF6D4FixedGridShard101OddResidualData[column.val]!
+    | 102 => suzukiDF6D4FixedGridShard102OddResidualData[column.val]!
+    | 103 => suzukiDF6D4FixedGridShard103OddResidualData[column.val]!
+    | 104 => suzukiDF6D4FixedGridShard104OddResidualData[column.val]!
+    | 105 => suzukiDF6D4FixedGridShard105OddResidualData[column.val]!
+    | 106 => suzukiDF6D4FixedGridShard106OddResidualData[column.val]!
+    | 107 => suzukiDF6D4FixedGridShard107OddResidualData[column.val]!
+    | 108 => suzukiDF6D4FixedGridShard108OddResidualData[column.val]!
+    | 109 => suzukiDF6D4FixedGridShard109OddResidualData[column.val]!
+    | 110 => suzukiDF6D4FixedGridShard110OddResidualData[column.val]!
+    | 111 => suzukiDF6D4FixedGridShard111OddResidualData[column.val]!
+    | 112 => suzukiDF6D4FixedGridShard112OddResidualData[column.val]!
+    | 113 => suzukiDF6D4FixedGridShard113OddResidualData[column.val]!
+    | 114 => suzukiDF6D4FixedGridShard114OddResidualData[column.val]!
+    | 115 => suzukiDF6D4FixedGridShard115OddResidualData[column.val]!
+    | 116 => suzukiDF6D4FixedGridShard116OddResidualData[column.val]!
+    | 117 => suzukiDF6D4FixedGridShard117OddResidualData[column.val]!
+    | 118 => suzukiDF6D4FixedGridShard118OddResidualData[column.val]!
+    | 119 => suzukiDF6D4FixedGridShard119OddResidualData[column.val]!
+    | 120 => suzukiDF6D4FixedGridShard120OddResidualData[column.val]!
+    | 121 => suzukiDF6D4FixedGridShard121OddResidualData[column.val]!
+    | 122 => suzukiDF6D4FixedGridShard122OddResidualData[column.val]!
+    | 123 => suzukiDF6D4FixedGridShard123OddResidualData[column.val]!
+    | 124 => suzukiDF6D4FixedGridShard124OddResidualData[column.val]!
+    | 125 => suzukiDF6D4FixedGridShard125OddResidualData[column.val]!
+    | 126 => suzukiDF6D4FixedGridShard126OddResidualData[column.val]!
+    | 127 => suzukiDF6D4FixedGridShard127OddResidualData[column.val]!
+    | 128 => suzukiDF6D4FixedGridShard128OddResidualData[column.val]!
+    | 129 => suzukiDF6D4FixedGridShard129OddResidualData[column.val]!
+    | 130 => suzukiDF6D4FixedGridShard130OddResidualData[column.val]!
+    | 131 => suzukiDF6D4FixedGridShard131OddResidualData[column.val]!
+    | 132 => suzukiDF6D4FixedGridShard132OddResidualData[column.val]!
+    | 133 => suzukiDF6D4FixedGridShard133OddResidualData[column.val]!
+    | 134 => suzukiDF6D4FixedGridShard134OddResidualData[column.val]!
+    | 135 => suzukiDF6D4FixedGridShard135OddResidualData[column.val]!
+    | 136 => suzukiDF6D4FixedGridShard136OddResidualData[column.val]!
+    | 137 => suzukiDF6D4FixedGridShard137OddResidualData[column.val]!
+    | 138 => suzukiDF6D4FixedGridShard138OddResidualData[column.val]!
+    | 139 => suzukiDF6D4FixedGridShard139OddResidualData[column.val]!
+    | 140 => suzukiDF6D4FixedGridShard140OddResidualData[column.val]!
+    | 141 => suzukiDF6D4FixedGridShard141OddResidualData[column.val]!
+    | 142 => suzukiDF6D4FixedGridShard142OddResidualData[column.val]!
+    | 143 => suzukiDF6D4FixedGridShard143OddResidualData[column.val]!
+    | 144 => suzukiDF6D4FixedGridShard144OddResidualData[column.val]!
+    | 145 => suzukiDF6D4FixedGridShard145OddResidualData[column.val]!
+    | 146 => suzukiDF6D4FixedGridShard146OddResidualData[column.val]!
+    | 147 => suzukiDF6D4FixedGridShard147OddResidualData[column.val]!
+    | 148 => suzukiDF6D4FixedGridShard148OddResidualData[column.val]!
+    | 149 => suzukiDF6D4FixedGridShard149OddResidualData[column.val]!
+    | 150 => suzukiDF6D4FixedGridShard150OddResidualData[column.val]!
+    | 151 => suzukiDF6D4FixedGridShard151OddResidualData[column.val]!
+    | 152 => suzukiDF6D4FixedGridShard152OddResidualData[column.val]!
+    | 153 => suzukiDF6D4FixedGridShard153OddResidualData[column.val]!
+    | 154 => suzukiDF6D4FixedGridShard154OddResidualData[column.val]!
+    | 155 => suzukiDF6D4FixedGridShard155OddResidualData[column.val]!
+    | 156 => suzukiDF6D4FixedGridShard156OddResidualData[column.val]!
+    | 157 => suzukiDF6D4FixedGridShard157OddResidualData[column.val]!
+    | 158 => suzukiDF6D4FixedGridShard158OddResidualData[column.val]!
+    | 159 => suzukiDF6D4FixedGridShard159OddResidualData[column.val]!
+    | 160 => suzukiDF6D4FixedGridShard160OddResidualData[column.val]!
+    | 161 => suzukiDF6D4FixedGridShard161OddResidualData[column.val]!
+    | 162 => suzukiDF6D4FixedGridShard162OddResidualData[column.val]!
+    | 163 => suzukiDF6D4FixedGridShard163OddResidualData[column.val]!
+    | 164 => suzukiDF6D4FixedGridShard164OddResidualData[column.val]!
+    | 165 => suzukiDF6D4FixedGridShard165OddResidualData[column.val]!
+    | 166 => suzukiDF6D4FixedGridShard166OddResidualData[column.val]!
+    | 167 => suzukiDF6D4FixedGridShard167OddResidualData[column.val]!
+    | 168 => suzukiDF6D4FixedGridShard168OddResidualData[column.val]!
+    | 169 => suzukiDF6D4FixedGridShard169OddResidualData[column.val]!
+    | 170 => suzukiDF6D4FixedGridShard170OddResidualData[column.val]!
+    | 171 => suzukiDF6D4FixedGridShard171OddResidualData[column.val]!
+    | 172 => suzukiDF6D4FixedGridShard172OddResidualData[column.val]!
+    | 173 => suzukiDF6D4FixedGridShard173OddResidualData[column.val]!
+    | 174 => suzukiDF6D4FixedGridShard174OddResidualData[column.val]!
+    | 175 => suzukiDF6D4FixedGridShard175OddResidualData[column.val]!
+    | 176 => suzukiDF6D4FixedGridShard176OddResidualData[column.val]!
+    | 177 => suzukiDF6D4FixedGridShard177OddResidualData[column.val]!
+    | 178 => suzukiDF6D4FixedGridShard178OddResidualData[column.val]!
+    | 179 => suzukiDF6D4FixedGridShard179OddResidualData[column.val]!
+    | 180 => suzukiDF6D4FixedGridShard180OddResidualData[column.val]!
+    | 181 => suzukiDF6D4FixedGridShard181OddResidualData[column.val]!
+    | 182 => suzukiDF6D4FixedGridShard182OddResidualData[column.val]!
+    | 183 => suzukiDF6D4FixedGridShard183OddResidualData[column.val]!
+    | 184 => suzukiDF6D4FixedGridShard184OddResidualData[column.val]!
+    | 185 => suzukiDF6D4FixedGridShard185OddResidualData[column.val]!
+    | 186 => suzukiDF6D4FixedGridShard186OddResidualData[column.val]!
+    | 187 => suzukiDF6D4FixedGridShard187OddResidualData[column.val]!
+    | 188 => suzukiDF6D4FixedGridShard188OddResidualData[column.val]!
+    | 189 => suzukiDF6D4FixedGridShard189OddResidualData[column.val]!
+    | 190 => suzukiDF6D4FixedGridShard190OddResidualData[column.val]!
+    | 191 => suzukiDF6D4FixedGridShard191OddResidualData[column.val]!
+    | 192 => suzukiDF6D4FixedGridShard192OddResidualData[column.val]!
+    | 193 => suzukiDF6D4FixedGridShard193OddResidualData[column.val]!
+    | 194 => suzukiDF6D4FixedGridShard194OddResidualData[column.val]!
+    | 195 => suzukiDF6D4FixedGridShard195OddResidualData[column.val]!
+    | 196 => suzukiDF6D4FixedGridShard196OddResidualData[column.val]!
+    | 197 => suzukiDF6D4FixedGridShard197OddResidualData[column.val]!
+    | 198 => suzukiDF6D4FixedGridShard198OddResidualData[column.val]!
+    | 199 => suzukiDF6D4FixedGridShard199OddResidualData[column.val]!
+    | 200 => suzukiDF6D4FixedGridShard200OddResidualData[column.val]!
+    | 201 => suzukiDF6D4FixedGridShard201OddResidualData[column.val]!
+    | 202 => suzukiDF6D4FixedGridShard202OddResidualData[column.val]!
+    | 203 => suzukiDF6D4FixedGridShard203OddResidualData[column.val]!
+    | 204 => suzukiDF6D4FixedGridShard204OddResidualData[column.val]!
+    | 205 => suzukiDF6D4FixedGridShard205OddResidualData[column.val]!
+    | 206 => suzukiDF6D4FixedGridShard206OddResidualData[column.val]!
+    | 207 => suzukiDF6D4FixedGridShard207OddResidualData[column.val]!
+    | 208 => suzukiDF6D4FixedGridShard208OddResidualData[column.val]!
+    | 209 => suzukiDF6D4FixedGridShard209OddResidualData[column.val]!
+    | 210 => suzukiDF6D4FixedGridShard210OddResidualData[column.val]!
+    | 211 => suzukiDF6D4FixedGridShard211OddResidualData[column.val]!
+    | 212 => suzukiDF6D4FixedGridShard212OddResidualData[column.val]!
+    | 213 => suzukiDF6D4FixedGridShard213OddResidualData[column.val]!
+    | 214 => suzukiDF6D4FixedGridShard214OddResidualData[column.val]!
+    | 215 => suzukiDF6D4FixedGridShard215OddResidualData[column.val]!
+    | 216 => suzukiDF6D4FixedGridShard216OddResidualData[column.val]!
+    | 217 => suzukiDF6D4FixedGridShard217OddResidualData[column.val]!
+    | 218 => suzukiDF6D4FixedGridShard218OddResidualData[column.val]!
+    | 219 => suzukiDF6D4FixedGridShard219OddResidualData[column.val]!
+    | 220 => suzukiDF6D4FixedGridShard220OddResidualData[column.val]!
+    | 221 => suzukiDF6D4FixedGridShard221OddResidualData[column.val]!
+    | 222 => suzukiDF6D4FixedGridShard222OddResidualData[column.val]!
+    | 223 => suzukiDF6D4FixedGridShard223OddResidualData[column.val]!
+    | 224 => suzukiDF6D4FixedGridShard224OddResidualData[column.val]!
+    | 225 => suzukiDF6D4FixedGridShard225OddResidualData[column.val]!
+    | 226 => suzukiDF6D4FixedGridShard226OddResidualData[column.val]!
+    | 227 => suzukiDF6D4FixedGridShard227OddResidualData[column.val]!
+    | 228 => suzukiDF6D4FixedGridShard228OddResidualData[column.val]!
+    | 229 => suzukiDF6D4FixedGridShard229OddResidualData[column.val]!
+    | 230 => suzukiDF6D4FixedGridShard230OddResidualData[column.val]!
+    | 231 => suzukiDF6D4FixedGridShard231OddResidualData[column.val]!
+    | 232 => suzukiDF6D4FixedGridShard232OddResidualData[column.val]!
+    | 233 => suzukiDF6D4FixedGridShard233OddResidualData[column.val]!
+    | 234 => suzukiDF6D4FixedGridShard234OddResidualData[column.val]!
+    | 235 => suzukiDF6D4FixedGridShard235OddResidualData[column.val]!
+    | 236 => suzukiDF6D4FixedGridShard236OddResidualData[column.val]!
+    | 237 => suzukiDF6D4FixedGridShard237OddResidualData[column.val]!
+    | 238 => suzukiDF6D4FixedGridShard238OddResidualData[column.val]!
+    | 239 => suzukiDF6D4FixedGridShard239OddResidualData[column.val]!
+    | 240 => suzukiDF6D4FixedGridShard240OddResidualData[column.val]!
+    | 241 => suzukiDF6D4FixedGridShard241OddResidualData[column.val]!
+    | 242 => suzukiDF6D4FixedGridShard242OddResidualData[column.val]!
+    | 243 => suzukiDF6D4FixedGridShard243OddResidualData[column.val]!
+    | 244 => suzukiDF6D4FixedGridShard244OddResidualData[column.val]!
+    | 245 => suzukiDF6D4FixedGridShard245OddResidualData[column.val]!
+    | 246 => suzukiDF6D4FixedGridShard246OddResidualData[column.val]!
+    | 247 => suzukiDF6D4FixedGridShard247OddResidualData[column.val]!
+    | 248 => suzukiDF6D4FixedGridShard248OddResidualData[column.val]!
+    | 249 => suzukiDF6D4FixedGridShard249OddResidualData[column.val]!
+    | 250 => suzukiDF6D4FixedGridShard250OddResidualData[column.val]!
+    | 251 => suzukiDF6D4FixedGridShard251OddResidualData[column.val]!
+    | 252 => suzukiDF6D4FixedGridShard252OddResidualData[column.val]!
+    | 253 => suzukiDF6D4FixedGridShard253OddResidualData[column.val]!
+    | 254 => suzukiDF6D4FixedGridShard254OddResidualData[column.val]!
+    | 255 => suzukiDF6D4FixedGridShard255OddResidualData[column.val]!
+    | 256 => suzukiDF6D4FixedGridShard256OddResidualData[column.val]!
+    | 257 => suzukiDF6D4FixedGridShard257OddResidualData[column.val]!
+    | 258 => suzukiDF6D4FixedGridShard258OddResidualData[column.val]!
+    | 259 => suzukiDF6D4FixedGridShard259OddResidualData[column.val]!
+    | 260 => suzukiDF6D4FixedGridShard260OddResidualData[column.val]!
+    | 261 => suzukiDF6D4FixedGridShard261OddResidualData[column.val]!
+    | 262 => suzukiDF6D4FixedGridShard262OddResidualData[column.val]!
+    | 263 => suzukiDF6D4FixedGridShard263OddResidualData[column.val]!
+    | 264 => suzukiDF6D4FixedGridShard264OddResidualData[column.val]!
+    | 265 => suzukiDF6D4FixedGridShard265OddResidualData[column.val]!
+    | 266 => suzukiDF6D4FixedGridShard266OddResidualData[column.val]!
+    | 267 => suzukiDF6D4FixedGridShard267OddResidualData[column.val]!
+    | 268 => suzukiDF6D4FixedGridShard268OddResidualData[column.val]!
+    | 269 => suzukiDF6D4FixedGridShard269OddResidualData[column.val]!
+    | 270 => suzukiDF6D4FixedGridShard270OddResidualData[column.val]!
+    | 271 => suzukiDF6D4FixedGridShard271OddResidualData[column.val]!
+    | 272 => suzukiDF6D4FixedGridShard272OddResidualData[column.val]!
+    | 273 => suzukiDF6D4FixedGridShard273OddResidualData[column.val]!
+    | 274 => suzukiDF6D4FixedGridShard274OddResidualData[column.val]!
+    | 275 => suzukiDF6D4FixedGridShard275OddResidualData[column.val]!
+    | 276 => suzukiDF6D4FixedGridShard276OddResidualData[column.val]!
+    | 277 => suzukiDF6D4FixedGridShard277OddResidualData[column.val]!
+    | 278 => suzukiDF6D4FixedGridShard278OddResidualData[column.val]!
+    | 279 => suzukiDF6D4FixedGridShard279OddResidualData[column.val]!
+    | 280 => suzukiDF6D4FixedGridShard280OddResidualData[column.val]!
+    | 281 => suzukiDF6D4FixedGridShard281OddResidualData[column.val]!
+    | 282 => suzukiDF6D4FixedGridShard282OddResidualData[column.val]!
+    | 283 => suzukiDF6D4FixedGridShard283OddResidualData[column.val]!
+    | 284 => suzukiDF6D4FixedGridShard284OddResidualData[column.val]!
+    | 285 => suzukiDF6D4FixedGridShard285OddResidualData[column.val]!
+    | 286 => suzukiDF6D4FixedGridShard286OddResidualData[column.val]!
+    | 287 => suzukiDF6D4FixedGridShard287OddResidualData[column.val]!
+    | 288 => suzukiDF6D4FixedGridShard288OddResidualData[column.val]!
+    | 289 => suzukiDF6D4FixedGridShard289OddResidualData[column.val]!
+    | 290 => suzukiDF6D4FixedGridShard290OddResidualData[column.val]!
+    | 291 => suzukiDF6D4FixedGridShard291OddResidualData[column.val]!
+    | 292 => suzukiDF6D4FixedGridShard292OddResidualData[column.val]!
+    | 293 => suzukiDF6D4FixedGridShard293OddResidualData[column.val]!
+    | 294 => suzukiDF6D4FixedGridShard294OddResidualData[column.val]!
+    | 295 => suzukiDF6D4FixedGridShard295OddResidualData[column.val]!
+    | 296 => suzukiDF6D4FixedGridShard296OddResidualData[column.val]!
+    | 297 => suzukiDF6D4FixedGridShard297OddResidualData[column.val]!
+    | 298 => suzukiDF6D4FixedGridShard298OddResidualData[column.val]!
+    | 299 => suzukiDF6D4FixedGridShard299OddResidualData[column.val]!
+    | _ => default
+
+private def dotForColumn
+    (i : Nat) (entries : Fin 256 -> FixedGridInterval) :
+    FixedGridInterval :=
+  FixedGridInterval.dotCommonDenominator coefficientDenominator
+    (fun k : Fin 256 => coefficientNumerator k i) entries
+
+private def galerkinBaseEntry
+    (row j : Fin 44) : FixedGridInterval :=
+  (dotForColumn j.val fun k : Fin 256 =>
+    FixedGridInterval.ofRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (suzukiDF6D4OddCompleteCrossEntryInterval row k)).add
+  (dotForColumn row.val fun k : Fin 256 => solveEntry k j)
+
+private def finiteResidualGramEntry
+    (row j : Fin 44) : FixedGridInterval :=
+  (FixedGridInterval.mulCenteredFinSum
+    suzukiDF6D4FixedGridOddStage2Denominator
+    (fun k : Fin 256 => solveEntry k row)
+    (fun k : Fin 256 => solveEntry k j)).add
+  (FixedGridInterval.mulCenteredFinSum
+    suzukiDF6D4FixedGridOddStage2Denominator
+    (fun r : Fin 300 => residualEntry r row)
+    (fun r : Fin 300 => residualEntry r j))
+
+def suzukiDF6D4FixedGridOddStage2TargetEntry
+    (row j : Fin 44) : FixedGridInterval :=
+  (FixedGridInterval.scale
+    (2 / 5 * (1 - 1 / 1000000000) : Rat)
+    (FixedGridInterval.ofRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (suzukiDF6D4OddEndpointEntryInterval row j))).sub
+  (((galerkinBaseEntry row j).add
+    (FixedGridInterval.scale (1 / 5 : Rat)
+      (finiteResidualGramEntry row j))).add
+    (FixedGridInterval.scale (1 / 5 : Rat)
+      (FixedGridInterval.ofRationalInterval
+        suzukiDF6D4FixedGridOddStage2Denominator
+        (suzukiDF6D4OddAnalyticTailEntryInterval row j))))
+
+/-! ## Live fixed-grid target soundness -/
+
+private theorem solveEntry_eq_literal
+    (k : Fin 256) (i : Fin 44) :
+    solveEntry k i =
+      ((suzukiDF6D4FixedGridLiteralOddSolveRow k)[i.val]!) := by
+  native_decide +revert
+
+private theorem residualEntry_eq_literal
+    (r : Fin 300) (i : Fin 44) :
+    residualEntry r i =
+      ((suzukiDF6D4FixedGridLiteralOddResidualRow r)[i.val]!) := by
+  native_decide +revert
+
+private theorem solveEntry_contains
+    (k : Fin 256) (i : Fin 44) :
+    (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (solveEntry k i)).Contains
+        (suzukiDF6D4OddGalerkinSolveResidual k i) := by
+  rw [solveEntry_eq_literal]
+  exact suzukiDF6D4FixedGridLiteralOddSolveRow_contains k i
+
+private theorem residualEntry_contains
+    (r : Fin 300) (i : Fin 44) :
+    (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (residualEntry r i)).Contains
+        (suzukiDF6D4OddResidualColumn (301 + r.val) i) := by
+  rw [residualEntry_eq_literal]
+  exact suzukiDF6D4FixedGridLiteralOddResidualRow_contains r i
+
+private theorem dotForColumn_contains
+    (i : Fin 44) (entries : Fin 256 -> FixedGridInterval)
+    (x : Fin 256 -> Real)
+    (hx : forall k, (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (entries k)).Contains (x k)) :
+    (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (dotForColumn i.val entries)).Contains
+        (Finset.univ.sum fun k : Fin 256 =>
+          ((suzukiDF6D4OddGalerkinApproximant k i : Rat) : Real) *
+            x k) := by
+  have hdot := FixedGridInterval.contains_dotCommonDenominator
+    (n := 256)
+    (D := suzukiDF6D4FixedGridOddStage2Denominator)
+    (Q := coefficientDenominator)
+    (q := fun k => coefficientNumerator k i.val)
+    (I := entries) (x := x)
+    (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator]) hx
+  unfold dotForColumn
+  convert hdot using 1
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro k _
+  rw [← suzukiDF6D4FixedGridOddCoefficient_real k i]
+  simp only [coefficientDenominator, coefficientNumerator,
+    suzukiDF6D4FixedGridSoundnessCoefficientDenominator,
+    suzukiDF6D4FixedGridSoundnessOddNumerator]
+  ring
+
+private theorem galerkinBaseEntry_contains
+    (row j : Fin 44) :
+    (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (galerkinBaseEntry row j)).Contains
+        (suzukiDF6D4OddGalerkinBaseEntry row j) := by
+  have hcross := dotForColumn_contains j
+    (fun k : Fin 256 => FixedGridInterval.ofRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (suzukiDF6D4OddCompleteCrossEntryInterval row k))
+    (fun k : Fin 256 => suzukiDF6D4OddCompleteCrossEntry row k)
+    (fun k => FixedGridInterval.contains_ofRationalInterval
+      (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+      (suzukiDF6D4OddCompleteCrossEntryInterval_contains row k))
+  have hsolve := dotForColumn_contains row
+    (fun k : Fin 256 => solveEntry k j)
+    (fun k : Fin 256 => suzukiDF6D4OddGalerkinSolveResidual k j)
+    (fun k => solveEntry_contains k j)
+  unfold galerkinBaseEntry suzukiDF6D4OddGalerkinBaseEntry
+  simpa only [Finset.sum_add_distrib, mul_comm] using
+    FixedGridInterval.contains_add hcross hsolve
+
+private theorem finiteResidualGramEntry_contains
+    (row j : Fin 44) :
+    (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (finiteResidualGramEntry row j)).Contains
+        (suzukiDF6D4OddFiniteResidualGramEntry row j) := by
+  have hsolve := FixedGridInterval.contains_mulCenteredFinSum
+    (D := suzukiDF6D4FixedGridOddStage2Denominator)
+    (I := fun k : Fin 256 => solveEntry k row)
+    (J := fun k : Fin 256 => solveEntry k j)
+    (x := fun k : Fin 256 =>
+      suzukiDF6D4OddGalerkinSolveResidual k row)
+    (y := fun k : Fin 256 =>
+      suzukiDF6D4OddGalerkinSolveResidual k j)
+    (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+    (fun k => solveEntry_contains k row)
+    (fun k => solveEntry_contains k j)
+  have hresidual := FixedGridInterval.contains_mulCenteredFinSum
+    (D := suzukiDF6D4FixedGridOddStage2Denominator)
+    (I := fun r : Fin 300 => residualEntry r row)
+    (J := fun r : Fin 300 => residualEntry r j)
+    (x := fun r : Fin 300 =>
+      suzukiDF6D4OddResidualColumn (301 + r.val) row)
+    (y := fun r : Fin 300 =>
+      suzukiDF6D4OddResidualColumn (301 + r.val) j)
+    (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+    (fun r => residualEntry_contains r row)
+    (fun r => residualEntry_contains r j)
+  unfold finiteResidualGramEntry
+    suzukiDF6D4OddFiniteResidualGramEntry
+  exact FixedGridInterval.contains_add hsolve hresidual
+
+theorem suzukiDF6D4FixedGridOddStage2TargetEntry_contains
+    (row j : Fin 44) :
+    (FixedGridInterval.toRationalInterval
+      suzukiDF6D4FixedGridOddStage2Denominator
+      (suzukiDF6D4FixedGridOddStage2TargetEntry row j)).Contains
+        (suzukiDF6D4OddResidualCertificateTargetMatrix row j) := by
+  have hcoupling := FixedGridInterval.contains_add
+    (FixedGridInterval.contains_add
+      (galerkinBaseEntry_contains row j)
+      (FixedGridInterval.contains_scale (q := (1 / 5 : Rat))
+        (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+        (finiteResidualGramEntry_contains row j)))
+    (FixedGridInterval.contains_scale (q := (1 / 5 : Rat))
+      (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+      (FixedGridInterval.contains_ofRationalInterval
+        (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+        (suzukiDF6D4OddAnalyticTailEntryInterval_contains row j)))
+  have h := FixedGridInterval.contains_sub
+    (FixedGridInterval.contains_scale
+      (q := suzukiDF6D4OddStrictComparisonCoefficient)
+      (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+      (FixedGridInterval.contains_ofRationalInterval
+        (by norm_num [suzukiDF6D4FixedGridOddStage2Denominator])
+        (suzukiDF6D4OddEndpointEntryInterval_contains row j)))
+    hcoupling
+  unfold suzukiDF6D4FixedGridOddStage2TargetEntry
+  unfold suzukiDF6D4OddResidualCertificateTargetMatrix
+    suzukiDF6D4OddCouplingUpperMatrix
+    suzukiDF6D4OddGalerkinBaseMatrix
+    suzukiDF6D4OddFiniteResidualGramMatrix
+  simpa only [Matrix.sub_apply, Matrix.add_apply, Matrix.smul_apply,
+    smul_eq_mul, suzukiDF6D4OddStrictComparisonCoefficient,
+    suzukiDF6D4OddComparisonCoefficient,
+    suzukiDF6D4StrictReserve] using h
+
+end RiemannHypothesisProject.Experiments.M100

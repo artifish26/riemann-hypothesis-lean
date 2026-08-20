@@ -109,8 +109,12 @@ theorem integrableOn_gaussDigammaIntegrand {z : Complex} (hz : 0 < z.re) :
         (Set.Icc (0 : Real) (3 / 4)) := by
     refine (continuousOn_const.sub Complex.continuous_ofReal.continuousOn).inv₀ ?_
     intro x hx
-    exact sub_ne_zero.mpr (by
-      exact_mod_cast ne_of_gt (lt_of_le_of_lt hx.2 (by norm_num : (3 / 4 : Real) < 1)))
+    apply sub_ne_zero.mpr
+    have hxne : (1 : Real) ≠ x :=
+      ne_of_gt (lt_of_le_of_lt hx.2 (by norm_num : (3 / 4 : Real) < 1))
+    have hxneComplex : (1 : Complex) ≠ (x : Complex) := by
+      exact_mod_cast hxne
+    simpa using hxneComplex
   have hzero :
       IntegrableOn (gaussDigammaIntegrand z)
         (Set.Ioo (0 : Real) (3 / 4)) := by

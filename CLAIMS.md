@@ -1,33 +1,35 @@
 # Publication Claims
 
-This inventory describes the production theorem scope of the curated public
-release. Development history is intentionally not part of the release.
+This inventory describes the production theorem scope and the separately
+labelled experimental Suzuki S3 scope of the curated public release.
+Development history is intentionally not part of the release.
 
 **The repository does not prove the Riemann Hypothesis.** It proves several
-unconditional upstream theorems, criterion equivalences, and positivity on one
-fixed support class. The global positivity statement on the right-hand side of
-the Li/Weil criteria remains open and RH-equivalent.
+unconditional upstream theorems, criterion equivalences, positivity on one
+fixed support class, and a compact-window experimental Suzuki theorem package.
+The global positivity statement on the right-hand side of the Li/Weil criteria
+remains open and RH-equivalent.
 
 ## Release identity
 
-This inventory is published in documentation release `v0.1.1` and is bound to
-the production-theorem baseline below. The production Lean sources are
-unchanged from `v0.1.0`; subsequent changes before `v0.1.1` affect repository
-security and documentation only.
+This inventory is published in release `v0.2.0`. The tag binds the curated
+source snapshot, claim inventory, axiom audits, adversarial report, and pinned
+dependency graph. The development source snapshot is the S3 closeout commit
+listed below; private working documents are not included.
 
 | Field | Release value |
 | --- | --- |
-| Production-theorem tag | `v0.1.0` |
-| Production-theorem commit | `b215f8e9ca8e3db16e0d5902f97f8f7de537a92c` |
-| Documentation release | `v0.1.1` |
-| Release date | `2026-07-19` |
-| Lean toolchain | `leanprover/lean4:v4.31.0` |
-| Mathlib revision | `db127794c79fdeb86f6b0cf6ff2c804026fbaff1` |
-| Tagged clean build | 3,904 jobs; [successful `v0.1.0` run](https://github.com/artifish26/riemann-hypothesis-lean/actions/runs/29702361253) |
+| Publication release | `v0.2.0` |
+| Development source snapshot | `c858f86` (`Close DF6F analytic source bridge`) |
+| Release date | `2026-08-20` |
+| Lean toolchain | `leanprover/lean4:v4.32.2` |
+| Mathlib revision | `905b95818eb32af7874a58b427f50c1711a5e96c` |
+| PrimeNumberTheoremAnd revision | `6a380f0c4658c04a420a9eb00b1ed62a1e3fde01` |
+| Release verification | Full build, production audit, S3 audit, and adversarial consumers; see `REPRODUCIBILITY.md` and the tagged workflow |
 
-The immutable `v0.1.1` GitHub release binds this inventory to its own release
-commit. The explicit commit above identifies the theorem-source baseline whose
-claims are inventoried here.
+The immutable `v0.2.0` GitHub tag binds this inventory to its release commit.
+The development commit identifies the upstream theorem-source state from
+which the curated snapshot was produced.
 
 ## Status summary
 
@@ -39,6 +41,9 @@ claims are inventoried here.
 | Full Li criterion | Proved equivalence | All positive-index, full multiplicity-aware zeta Li coefficients |
 | Burnol positivity | Proved with restricted scope | One existentially fixed symmetric support interval |
 | PNT cutoff covariance | Proved | Regularised Li cutoff covariance from the pinned PrimeNumberTheoremAnd source |
+| Suzuki S3 compact-window coercivity | Experimental, checked | Genuine zero-mean source form on `I_0 = [log(2)/2, suzukiProjectAStar]` |
+| Suzuki S3 source identification | Experimental, checked | Compact-support localized Weil form, smooth form core, and associated source operator |
+| X19B normalized Fredholm family | Open / not started | Existence, gauge, compact-`z`, and parameter-control work remains |
 | Global Li/Weil positivity | Open | Criterion-determining global class; RH-equivalent |
 
 The classifications below use the project's four theorem roles: source
@@ -191,7 +196,60 @@ an assumption-free global zero-side theorem.
 - **Audit verdict:** source-closure `SC100`; the lane is independent of the
   fixed-support Burnol formula-identification lane.
 
-## 7. Open global statement
+## 7. Experimental Suzuki S3 milestone
+
+- **Claim:** on the named compact interval
+  `I_0 = [log(2)/2, suzukiProjectAStar]`, the genuine zero-mean source form
+  satisfies `G_a >= (1/400000) K_a`.
+- **Lean declaration:**
+  `RiemannHypothesisProject.Experiments.M100.suzukiDF6F_interval_source_coercive`.
+- **File:**
+  `RiemannHypothesisProject/Experiments/M100/SuzukiYoshidaDifferentialCoreDensity.lean`.
+- **Explicit assumptions:** the declaration retains
+  `SuzukiYoshidaExponentialFormCoreSourceAt suzukiProjectAStar` and
+  `SuzukiEquation25SourceIdentityAt suzukiProjectAStar`. They have checked
+  inhabitants
+  `suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff` and
+  `suzukiEquation25SourceIdentityAt_proved`. The release audit checks their
+  composition into this endpoint.
+- **Classification:** endpoint assembly consuming source theorems,
+  normalization/window bridges, exact finite certificate data, residual
+  representer/Parseval estimates, and the closed form-order chain.
+- **Release status:** experimental, checked, compact-window only.
+
+The associated source-norm estimate is
+`suzukiDF6F_sourceKSeminorm_solution_le` in
+`SuzukiYoshidaSourceNormConsumer.lean`. It proves
+`||u||_K <= C / (1/400000 - lambda)` for an explicitly admitted solution and
+source-dual forcing bound. The solution equation is a premise: this is not a
+solution-existence theorem and not an ambient bounded inverse for compact
+`G_a`.
+
+The uniform projected forcing specializations are
+`suzukiDF6F_fredholmPlus_solution_sourceKSeminorm_le_five` and
+`suzukiDF6F_fredholmMinus_solution_sourceKSeminorm_le_five` in
+`SuzukiYoshidaFredholmUniformBound.lean`. Their shift, interval membership, and
+solution equations remain explicit.
+
+The genuine source identification is represented by:
+
+- `suzukiSourceAaSmoothCoreBurnolGuinandWeilAssumptions_proved` in
+  `SuzukiYoshidaSourceAaBurnolFormula.lean`;
+- `suzukiSourceLocalizedWeilPairing_smoothCore_eq_correctedCompleteForm` and
+  `exists_suzukiSourceAaSmoothCoreFormApproximation` in
+  `SuzukiYoshidaSourceAaClosedFormCompletion.lean`; and
+- `suzukiYoshidaCorrectedFormAssociatedOperator_is_sourceAa` in
+  `SuzukiYoshidaSourceAaIdentification.lean`.
+
+Together these identify the compact-support localized Weil pairing, its
+closed completed form and smooth form core, and Suzuki's associated source
+operator. They do not assert absolute convergence of the literal zero series
+for every completed-domain pair.
+
+Full theorem, assumption, computational-trust, and limitation details are in
+`RELEASE/SUZUKI_S3.md`.
+
+## 8. Open X19B and global statements
 
 - **Claim status:** open and RH-hard.
 - **Checked criterion:**
@@ -204,16 +262,28 @@ an assumption-free global zero-side theorem.
 
 Nothing in this release changes this status.
 
+X19B is also open. S3 supplies its source-compatible entry theorem but does not
+construct the normalized fixed-gauge Fredholm solution family, prove compact-
+`z` bounds, or prove parameter continuity/precompactness. The all-radius
+no-degeneracy endpoint remains `RH_HARD` and is outside the S3 release.
+
 ## Import and axiom boundary
 
 `RiemannHypothesisProject/Basic.lean` imports the production surface.
 `RELEASE/PublicationAxiomAudit.lean` is a repeatable, non-production consumer
-that prints the axioms of the representative endpoints listed here. At the
-production-theorem release commit, those endpoints report only:
+that prints the axioms of the representative production endpoints listed
+here. `RELEASE/SuzukiS3AxiomAudit.lean` separately checks the experimental S3
+compositions and prints their axiom dependencies. The production audit reports
+only:
 
 - `propext`;
 - `Classical.choice`;
 - `Quot.sound`.
+
+The S3 certificate chain additionally retains the declared compiler-backed
+`native_decide` trust boundary for exact finite decision problems. The precise
+names emitted by the tagged audit are part of the release verification record;
+see `RELEASE/SUZUKI_S3.md`.
 
 This audit mechanically records the Lean dependency boundary of the selected
 declarations. It does not by itself establish that every formal definition,

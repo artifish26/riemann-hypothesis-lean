@@ -56,9 +56,9 @@ theorem guinandWeilSimpleResidue_eq_zero_of_analyticAt
   apply guinandWeilSimpleResidue_eq_of_tendsto
   have hsub :
       Tendsto (fun z : Complex => z - p) (𝓝[≠] p) (𝓝 0) := by
-    simpa using
-      ((continuous_id.sub continuous_const).continuousAt.continuousWithinAt.tendsto :
-        Tendsto (fun z : Complex => z - p) (𝓝[≠] p) (𝓝 (p - p)))
+    have hcontinuous : Continuous (fun z : Complex => z - p) :=
+      continuous_id.sub continuous_const
+    simpa using tendsto_nhdsWithin_of_tendsto_nhds (hcontinuous.tendsto p)
   have hFtendsto : Tendsto F (𝓝[≠] p) (𝓝 (F p)) :=
     hF.continuousAt.continuousWithinAt.tendsto
   simpa using hsub.mul hFtendsto
@@ -70,9 +70,9 @@ private theorem tendsto_self_sub_mul_of_sub_principal_isBigO_one
     Tendsto (fun z : Complex => (z - p) * F z) (𝓝[≠] p) (𝓝 c) := by
   have hp_tendsto :
       Tendsto (fun z : Complex => z - p) (𝓝[≠] p) (𝓝 0) := by
-    simpa using
-      ((continuous_id.sub continuous_const).continuousAt.continuousWithinAt.tendsto :
-        Tendsto (fun z : Complex => z - p) (𝓝[≠] p) (𝓝 (p - p)))
+    have hcontinuous : Continuous (fun z : Complex => z - p) :=
+      continuous_id.sub continuous_const
+    simpa using tendsto_nhdsWithin_of_tendsto_nhds (hcontinuous.tendsto p)
   have hp_small :
       (fun z : Complex => z - p) =o[𝓝[≠] p] (1 : Complex → Complex) :=
     (isLittleO_one_iff Complex).2 hp_tendsto

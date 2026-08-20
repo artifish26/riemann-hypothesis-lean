@@ -150,8 +150,8 @@ theorem dirichletEtaAlternatingLimit_of_hasSum_conditional {x eta : Real}
         (Finset.range n).sum (dirichletEtaSeriesTerm x))
         atTop (nhds eta) := by
     simpa [Function.comp_def] using hsum
-  simpa [DirichletEtaAlternatingLimit, dirichletEtaPartialSum,
-    dirichletEtaSeriesTerm] using hlim
+  simpa only [DirichletEtaAlternatingLimit,
+    dirichletEtaPartialSum_eq_sum_seriesTerm] using hlim
 
 /-- Sequential eta limits and conditional eta sums are equivalent. -/
 theorem dirichletEtaAlternatingLimit_iff_hasSum_conditional
