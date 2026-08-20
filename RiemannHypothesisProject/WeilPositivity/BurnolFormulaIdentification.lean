@@ -302,7 +302,7 @@ theorem burnolLocalCoefficient_eq_pole_add_archimedean (t : Real) :
   unfold burnolLocalCoefficient burnolPoleSpectralKernel
   ring
 
-/-- The decisive project-normalized fixed-support bridge: on Burnol's exact fixed
+/-- The decisive project-normalized M90 bridge: on Burnol's exact fixed
 support class, the existing local spectral quadratic form is `2*pi` times
 the actual Guinand-Weil prime/pole/Gamma residual. The only finiteness input
 retained is integrability of the exact local term. -/

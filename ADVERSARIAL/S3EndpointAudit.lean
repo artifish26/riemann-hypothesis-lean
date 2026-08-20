@@ -1,0 +1,38 @@
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
+
+/-!
+# Adversarial Suzuki S3 endpoint audit
+
+This consumer keeps the compact-window theorem identity, checked source
+inhabitants, solution-estimate premises, and associated-operator surface easy
+to recheck. It is audit-only and is not imported by production or experiment
+source modules.
+-/
+
+open RiemannHypothesisProject.Experiments.M100
+
+#check suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff
+#check suzukiEquation25SourceIdentityAt_proved
+#check suzukiDF6D5B4_fixedEndpoint_coercive
+#check suzukiDF6E_interval_coercive
+#check suzukiDF6F_interval_source_coercive
+#check suzukiDF6F_sourceKSeminorm_solution_le
+#check suzukiDF6F_fredholmPlus_solution_sourceKSeminorm_le_five
+#check suzukiDF6F_fredholmMinus_solution_sourceKSeminorm_le_five
+#check suzukiSourceAaSmoothCoreBurnolGuinandWeilAssumptions_proved
+#check suzukiSourceLocalizedWeilPairing_smoothCore_eq_correctedCompleteForm
+#check exists_suzukiSourceAaSmoothCoreFormApproximation
+#check suzukiYoshidaCorrectedFormAssociatedOperator_is_sourceAa
+
+#check suzukiDF6F_interval_source_coercive
+  (suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff suzukiProjectAStar)
+  (suzukiEquation25SourceIdentityAt_proved suzukiProjectAStar)
+
+#print axioms suzukiDF6F_interval_source_coercive
+#print axioms suzukiDF6F_sourceKSeminorm_solution_le
+#print axioms suzukiSourceAaSmoothCoreBurnolGuinandWeilAssumptions_proved
+#print axioms exists_suzukiSourceAaSmoothCoreFormApproximation
+#print axioms suzukiYoshidaCorrectedFormAssociatedOperator_is_sourceAa

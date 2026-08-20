@@ -6,7 +6,7 @@ import RiemannHypothesisProject.WeilPositivity.BurnolLocalSupportUnconditional
 
 This module composes the unconditional Binet/Burnol fixed-support theorem with
 the exact Guinand-Weil residual identification. The prime-moment/PNT source
-closure is deliberately not imported: it is a separate source dependency.
+closure is deliberately not imported: it is a separate M90 source stream.
 -/
 
 namespace RiemannHypothesisProject

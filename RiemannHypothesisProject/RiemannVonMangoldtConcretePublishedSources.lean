@@ -661,9 +661,10 @@ theorem bellottiWongCutoffTwoExtendedErrorTerm_cutoffTwo_le_quadratic
       100 * |(n : Real) + 1| ^ (2 : Real) := by
   by_cases hn : n = 0
   · subst n
-    dsimp [bellottiWongCutoffTwoExtendedErrorTerm, bellottiWongValidFrom]
-    rw [if_pos Real.exp_one_gt_two]
-    simpa using belowErrorConstant_le
+    have htwo_lt : (2 : Real) < bellottiWongValidFrom := by
+      simpa [bellottiWongValidFrom] using Real.exp_one_gt_two
+    simpa [bellottiWongCutoffTwoExtendedErrorTerm, htwo_lt] using
+      belowErrorConstant_le
   · have hnpos : 0 < n := Nat.pos_of_ne_zero hn
     have hn_ge_one : 1 <= n := Nat.succ_le_of_lt hnpos
     have hthree_le_nat : 3 <= n + 2 := by
@@ -804,10 +805,11 @@ theorem bellottiWongCutoffTwoSignedExtendedErrorTerm_cutoffTwo_le_quadratic
       100 * |(n : Real) + 1| ^ (2 : Real) := by
   by_cases hn : n = 0
   · subst n
-    dsimp [bellottiWongCutoffTwoSignedExtendedErrorTerm,
-      bellottiWongValidFrom]
-    rw [if_neg (by norm_num), if_pos Real.exp_one_gt_two]
-    simpa using belowErrorConstant_le
+    have htwo_lt : (2 : Real) < bellottiWongValidFrom := by
+      simpa [bellottiWongValidFrom] using Real.exp_one_gt_two
+    have htwo_nonneg : ¬ (2 : Real) < 0 := by norm_num
+    simpa [bellottiWongCutoffTwoSignedExtendedErrorTerm, htwo_lt, htwo_nonneg] using
+      belowErrorConstant_le
   · have hnpos : 0 < n := Nat.pos_of_ne_zero hn
     have hn_ge_one : 1 <= n := Nat.succ_le_of_lt hnpos
     have hthree_le_nat : 3 <= n + 2 := by

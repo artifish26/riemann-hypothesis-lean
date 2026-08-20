@@ -355,8 +355,8 @@ theorem dirichletEta_evenPartialSum_tendsto_alternatingValue
         (Finset.range n).sum (dirichletEtaSeriesTerm x))
         atTop (nhds (dirichletEtaAlternatingValue x)) := by
     have hspec := dirichletEtaAlternatingValue_spec hx
-    simpa [DirichletEtaAlternatingLimit, dirichletEtaPartialSum,
-      dirichletEtaSeriesTerm] using hspec
+    simpa only [DirichletEtaAlternatingLimit,
+      dirichletEtaPartialSum_eq_sum_seriesTerm] using hspec
   have hsubseq : Tendsto (fun M : Nat => 2 * M) atTop atTop := by
     refine tendsto_atTop.2 ?_
     intro b
@@ -376,8 +376,8 @@ theorem dirichletEta_oddPartialSum_tendsto_alternatingValue
         (Finset.range n).sum (dirichletEtaSeriesTerm x))
         atTop (nhds (dirichletEtaAlternatingValue x)) := by
     have hspec := dirichletEtaAlternatingValue_spec hx
-    simpa [DirichletEtaAlternatingLimit, dirichletEtaPartialSum,
-      dirichletEtaSeriesTerm] using hspec
+    simpa only [DirichletEtaAlternatingLimit,
+      dirichletEtaPartialSum_eq_sum_seriesTerm] using hspec
   have hsubseq : Tendsto (fun M : Nat => 2 * M + 1) atTop atTop := by
     refine tendsto_atTop.2 ?_
     intro b

@@ -80,7 +80,10 @@ theorem schwartzZeroWindowWeight_tsum_eq_energy
             simpa using hrho_not_mem
           simp [schwartzZeroWindowWeight, hrho_not_mem_finset]
     _ = schwartzZeroWindowEnergy zeroes f := by
-          simp [schwartzZeroWindowWeight, schwartzZeroWindowEnergy]
+          rw [schwartzZeroWindowEnergy]
+          refine Finset.sum_congr rfl ?_
+          intro rho hrho
+          simp [schwartzZeroWindowWeight, hrho]
 
 /--
 A finite-zero-window local criterion using Schwartz test functions and the

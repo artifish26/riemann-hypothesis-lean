@@ -91,21 +91,13 @@ theorem dirichletEtaParity_natCast_succ (n : Nat) :
 /-- The eta parity coefficient has average zero over `ZMod 2`. -/
 theorem dirichletEtaParity_sum_eq_zero :
     (∑ j : ZMod 2, dirichletEtaParity j) = 0 := by
-  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by
-    ext j
-    fin_cases j
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inl rfl
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inr rfl]
+  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by rfl]
   simp
 
 /-- In modulus two, the eta parity coefficient is even. -/
 theorem dirichletEtaParity_even : dirichletEtaParity.Even := by
   intro j
-  fin_cases j <;> simp
+  rw [ZMod.neg_eq_self_mod_two]
 
 /-- The nontrivial standard additive character on `ZMod 2` has value `-1` at `1`. -/
 theorem zmodTwo_stdAddChar_one :
@@ -151,15 +143,7 @@ attached to the residue classes `1` and `0`.
 theorem dirichletEtaLFunction_eq_hurwitzZeta_modTwo (s : Complex) :
     dirichletEtaLFunction s = dirichletEtaHurwitzModTwoValue s := by
   rw [dirichletEtaLFunction, ZMod.LFunction]
-  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by
-    ext j
-    fin_cases j
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inl rfl
-    · simp only [Finset.mem_univ, true_iff, Finset.mem_insert,
-        Finset.mem_singleton]
-      exact Or.inr rfl]
+  rw [show (Finset.univ : Finset (ZMod 2)) = {0, 1} by rfl]
   simp [dirichletEtaHurwitzModTwoValue, sub_eq_add_neg, add_comm]
 
 /--
@@ -693,7 +677,15 @@ theorem zmodAdditiveCharacterAbelSeriesTerm_partialSums_cauchy {N : Nat}
   have hzb (n : Nat) : ‖(Finset.range n).sum z‖ ≤ B := by
     simpa [z] using hB n
   have hc := hanti.cauchySeq_series_mul_of_tendsto_zero_of_bounded hf0 hzb
-  simpa [f, z, zmodAdditiveCharacterAbelSeriesTerm, mul_comm] using hc
+  rw [show
+    (fun n : Nat =>
+      (Finset.range n).sum (zmodAdditiveCharacterAbelSeriesTerm j x)) =
+        (fun n : Nat => ∑ i ∈ Finset.range n, f i • z i) by
+      funext n
+      refine Finset.sum_congr rfl ?_
+      intro i hi
+      simp [f, z, zmodAdditiveCharacterAbelSeriesTerm, mul_comm]]
+  exact hc
 
 /--
 Existential boundary convergence form of the additive-character Dirichlet

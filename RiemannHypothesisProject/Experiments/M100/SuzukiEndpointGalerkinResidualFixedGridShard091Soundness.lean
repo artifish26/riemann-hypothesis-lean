@@ -1,0 +1,361 @@
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard091Stage0Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridShard091Stage1Check
+import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualFixedGridSoundness
+
+namespace RiemannHypothesisProject.Experiments.M100
+
+set_option maxRecDepth 100000
+
+theorem suzukiDF6D4FixedGridShard091EvenComparison_eq_live :
+    suzukiDF6D4FixedGridShard091EvenComparisonData =
+      Array.ofFn fun k : Fin 256 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4EvenTabulatedComparisonGalerkinEntryInterval 91 k) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.1.1
+  change suzukiDF6D4FixedGridShard091EvenComparisonData =
+    Array.ofFn (fun k : Fin 256 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4EvenTabulatedComparisonGalerkinEntryInterval 91 k)) at h
+  exact h
+
+def suzukiDF6D4FixedGridShard091EvenDotSoundness
+    (i : Nat) (a : Array FixedGridInterval) :=
+  suzukiDF6D4FixedGridEvenDotSoundness i a
+
+def suzukiDF6D4FixedGridShard091EvenSolveSoundness := Array.ofFn fun i : Fin 45 =>
+  (suzukiDF6D4FixedGridShard091EvenCrossData[i.val]!).sub
+    (suzukiDF6D4FixedGridShard091EvenDotSoundness i.val
+      suzukiDF6D4FixedGridShard091EvenComparisonData)
+
+theorem suzukiDF6D4FixedGridShard091EvenSolve_eq_checked :
+    suzukiDF6D4FixedGridShard091EvenSolveData =
+      suzukiDF6D4FixedGridShard091EvenSolveSoundness := by
+  have h := suzukiDF6D4FixedGridShard091Stage1_valid.1.1
+  change suzukiDF6D4FixedGridShard091EvenSolveData =
+    suzukiDF6D4FixedGridShard091EvenSolveSoundness at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091EvenCross_eq_live :
+    suzukiDF6D4FixedGridShard091EvenCrossData =
+      Array.ofFn fun i : Fin 45 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4EvenCompleteCrossEntryInterval i 91) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.1.2.1
+  change suzukiDF6D4FixedGridShard091EvenCrossData =
+    Array.ofFn (fun i : Fin 45 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4EvenCompleteCrossEntryInterval i 91)) at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091EvenSolveData_contains (i : Fin 45) :
+    (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+      (suzukiDF6D4FixedGridShard091EvenSolveData[i.val]!)).Contains
+        (suzukiDF6D4EvenGalerkinSolveResidual 91 i) := by
+  have hx (k : Fin 256) :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091EvenComparisonData[k.val]!)).Contains
+          (suzukiDF6D4EvenComparisonGalerkinEntry 91 k) := by
+    rw [suzukiDF6D4FixedGridShard091EvenComparison_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4EvenTabulatedComparisonGalerkinEntryInterval_contains 91 k)
+  have hdot' :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091EvenDotSoundness i
+          suzukiDF6D4FixedGridShard091EvenComparisonData)).Contains
+        (Finset.univ.sum fun k : Fin 256 =>
+          ((suzukiDF6D4EvenGalerkinApproximant k i : Rat) : Real) *
+            suzukiDF6D4EvenComparisonGalerkinEntry 91 k) := by
+    simpa [suzukiDF6D4FixedGridShard091EvenDotSoundness] using
+      suzukiDF6D4FixedGridEvenDotSoundness_contains i
+        suzukiDF6D4FixedGridShard091EvenComparisonData
+        (fun k => suzukiDF6D4EvenComparisonGalerkinEntry 91 k) hx
+  have hcross :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091EvenCrossData[i.val]!)).Contains
+          (suzukiDF6D4EvenCompleteCrossEntry i 91) := by
+    rw [suzukiDF6D4FixedGridShard091EvenCross_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4EvenCompleteCrossEntryInterval_contains i 91)
+  rw [suzukiDF6D4FixedGridShard091EvenSolve_eq_checked]
+  have hentry :
+      suzukiDF6D4FixedGridShard091EvenSolveSoundness[i.val]! =
+        (suzukiDF6D4FixedGridShard091EvenCrossData[i.val]!).sub
+          (suzukiDF6D4FixedGridShard091EvenDotSoundness i
+            suzukiDF6D4FixedGridShard091EvenComparisonData) := by
+    simp [suzukiDF6D4FixedGridShard091EvenSolveSoundness, i.isLt]
+  rw [hentry]
+  exact FixedGridInterval.contains_sub hcross (by
+    simpa only [mul_comm] using hdot')
+
+theorem suzukiDF6D4FixedGridShard091OddComparison_eq_live :
+    suzukiDF6D4FixedGridShard091OddComparisonData =
+      Array.ofFn fun k : Fin 256 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4OddComparisonGalerkinEntryInterval 91 k) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.1.2.2.1
+  change suzukiDF6D4FixedGridShard091OddComparisonData =
+    Array.ofFn (fun k : Fin 256 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4OddComparisonGalerkinEntryInterval 91 k)) at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091OddCross_eq_live :
+    suzukiDF6D4FixedGridShard091OddCrossData =
+      Array.ofFn fun i : Fin 44 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4OddCompleteCrossEntryInterval i 91) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.1.2.2.2
+  change suzukiDF6D4FixedGridShard091OddCrossData =
+    Array.ofFn (fun i : Fin 44 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4OddCompleteCrossEntryInterval i 91)) at h
+  exact h
+
+def suzukiDF6D4FixedGridShard091OddDotSoundness
+    (i : Nat) (a : Array FixedGridInterval) :=
+  suzukiDF6D4FixedGridOddDotSoundness i a
+
+def suzukiDF6D4FixedGridShard091OddSolveSoundness := Array.ofFn fun i : Fin 44 =>
+  (suzukiDF6D4FixedGridShard091OddCrossData[i.val]!).sub
+    (suzukiDF6D4FixedGridShard091OddDotSoundness i.val
+      suzukiDF6D4FixedGridShard091OddComparisonData)
+
+theorem suzukiDF6D4FixedGridShard091OddSolve_eq_checked :
+    suzukiDF6D4FixedGridShard091OddSolveData =
+      suzukiDF6D4FixedGridShard091OddSolveSoundness := by
+  have h := suzukiDF6D4FixedGridShard091Stage1_valid.1.2
+  change suzukiDF6D4FixedGridShard091OddSolveData =
+    suzukiDF6D4FixedGridShard091OddSolveSoundness at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091OddSolveData_contains (i : Fin 44) :
+    (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+      (suzukiDF6D4FixedGridShard091OddSolveData[i.val]!)).Contains
+        (suzukiDF6D4OddGalerkinSolveResidual 91 i) := by
+  have hx (k : Fin 256) :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091OddComparisonData[k.val]!)).Contains
+          (suzukiDF6D4OddComparisonGalerkinEntry 91 k) := by
+    rw [suzukiDF6D4FixedGridShard091OddComparison_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4OddComparisonGalerkinEntryInterval_contains 91 k)
+  have hdot' :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091OddDotSoundness i
+          suzukiDF6D4FixedGridShard091OddComparisonData)).Contains
+        (Finset.univ.sum fun k : Fin 256 =>
+          ((suzukiDF6D4OddGalerkinApproximant k i : Rat) : Real) *
+            suzukiDF6D4OddComparisonGalerkinEntry 91 k) := by
+    simpa [suzukiDF6D4FixedGridShard091OddDotSoundness] using
+      suzukiDF6D4FixedGridOddDotSoundness_contains i
+        suzukiDF6D4FixedGridShard091OddComparisonData
+        (fun k => suzukiDF6D4OddComparisonGalerkinEntry 91 k) hx
+  have hcross :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091OddCrossData[i.val]!)).Contains
+          (suzukiDF6D4OddCompleteCrossEntry i 91) := by
+    rw [suzukiDF6D4FixedGridShard091OddCross_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4OddCompleteCrossEntryInterval_contains i 91)
+  rw [suzukiDF6D4FixedGridShard091OddSolve_eq_checked]
+  have hentry :
+      suzukiDF6D4FixedGridShard091OddSolveSoundness[i.val]! =
+        (suzukiDF6D4FixedGridShard091OddCrossData[i.val]!).sub
+          (suzukiDF6D4FixedGridShard091OddDotSoundness i
+            suzukiDF6D4FixedGridShard091OddComparisonData) := by
+    simp [suzukiDF6D4FixedGridShard091OddSolveSoundness, i.isLt]
+  rw [hentry]
+  exact FixedGridInterval.contains_sub hcross (by
+    simpa only [mul_comm] using hdot')
+
+theorem suzukiDF6D4FixedGridShard091EvenResidualComparison_eq_live :
+    suzukiDF6D4FixedGridShard091EvenResidualComparisonData =
+      Array.ofFn fun k : Fin 256 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4TabulatedComparisonEvenOffDiagonalInterval
+            (suzukiDF6D4GalerkinMode k) 392) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.2.1
+  change suzukiDF6D4FixedGridShard091EvenResidualComparisonData =
+    Array.ofFn (fun k : Fin 256 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4TabulatedComparisonEvenOffDiagonalInterval
+          (suzukiDF6D4GalerkinMode k) 392)) at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091EvenFull_eq_live :
+    suzukiDF6D4FixedGridShard091EvenFullData =
+      Array.ofFn fun i : Fin 45 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4FullEvenOffDiagonalInterval
+            (suzukiDF6D4EvenLowMode i) 392) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.2.2.1
+  change suzukiDF6D4FixedGridShard091EvenFullData =
+    Array.ofFn (fun i : Fin 45 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FullEvenOffDiagonalInterval
+          (suzukiDF6D4EvenLowMode i) 392)) at h
+  exact h
+
+def suzukiDF6D4FixedGridShard091EvenResidualSoundness :=
+  Array.ofFn fun i : Fin 45 =>
+    (suzukiDF6D4FixedGridShard091EvenFullData[i.val]!).sub
+      (suzukiDF6D4FixedGridShard091EvenDotSoundness i.val
+        suzukiDF6D4FixedGridShard091EvenResidualComparisonData)
+
+theorem suzukiDF6D4FixedGridShard091EvenResidual_eq_checked :
+    suzukiDF6D4FixedGridShard091EvenResidualData =
+      suzukiDF6D4FixedGridShard091EvenResidualSoundness := by
+  have h := suzukiDF6D4FixedGridShard091Stage1_valid.2.1
+  change suzukiDF6D4FixedGridShard091EvenResidualData =
+    suzukiDF6D4FixedGridShard091EvenResidualSoundness at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091EvenResidualData_contains (i : Fin 45) :
+    (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+      (suzukiDF6D4FixedGridShard091EvenResidualData[i.val]!)).Contains
+        (suzukiDF6D4EvenResidualColumn 392 i) := by
+  have hx (k : Fin 256) :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091EvenResidualComparisonData[k.val]!)).Contains
+          (suzukiDF6D4ComparisonEvenOffDiagonal
+            (suzukiDF6D4GalerkinMode k) 392) := by
+    rw [suzukiDF6D4FixedGridShard091EvenResidualComparison_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4TabulatedComparisonEvenOffDiagonalInterval_contains
+        (suzukiDF6D4GalerkinMode k) 392
+        (by simp [suzukiDF6D4GalerkinMode])
+        (by have := k.isLt; simp [suzukiDF6D4GalerkinMode] at *; omega)
+        (by omega))
+  have hdot' :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091EvenDotSoundness i
+          suzukiDF6D4FixedGridShard091EvenResidualComparisonData)).Contains
+        (Finset.univ.sum fun k : Fin 256 =>
+          ((suzukiDF6D4EvenGalerkinApproximant k i : Rat) : Real) *
+            suzukiDF6D4ComparisonEvenOffDiagonal
+              (suzukiDF6D4GalerkinMode k) 392) := by
+    simpa [suzukiDF6D4FixedGridShard091EvenDotSoundness] using
+      suzukiDF6D4FixedGridEvenDotSoundness_contains i
+        suzukiDF6D4FixedGridShard091EvenResidualComparisonData
+        (fun k => suzukiDF6D4ComparisonEvenOffDiagonal
+          (suzukiDF6D4GalerkinMode k) 392) hx
+  have hfull :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091EvenFullData[i.val]!)).Contains
+          (suzukiDF6D4EvenOffDiagonal (suzukiDF6D4EvenLowMode i) 392) := by
+    rw [suzukiDF6D4FixedGridShard091EvenFull_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4FullEvenOffDiagonalInterval_contains
+        (suzukiDF6D4EvenLowMode i) 392
+        (by simp [suzukiDF6D4EvenLowMode]; omega)
+        (by omega))
+  rw [suzukiDF6D4FixedGridShard091EvenResidual_eq_checked]
+  have hentry :
+      suzukiDF6D4FixedGridShard091EvenResidualSoundness[i.val]! =
+        (suzukiDF6D4FixedGridShard091EvenFullData[i.val]!).sub
+          (suzukiDF6D4FixedGridShard091EvenDotSoundness i
+            suzukiDF6D4FixedGridShard091EvenResidualComparisonData) := by
+    simp [suzukiDF6D4FixedGridShard091EvenResidualSoundness, i.isLt]
+  rw [hentry]
+  exact FixedGridInterval.contains_sub hfull hdot'
+
+theorem suzukiDF6D4FixedGridShard091OddResidualComparison_eq_live :
+    suzukiDF6D4FixedGridShard091OddResidualComparisonData =
+      Array.ofFn fun k : Fin 256 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4ComparisonOddOffDiagonalInterval
+            (suzukiDF6D4GalerkinMode k) 392) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.2.2.2.1
+  change suzukiDF6D4FixedGridShard091OddResidualComparisonData =
+    Array.ofFn (fun k : Fin 256 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4ComparisonOddOffDiagonalInterval
+          (suzukiDF6D4GalerkinMode k) 392)) at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091OddFull_eq_live :
+    suzukiDF6D4FixedGridShard091OddFullData =
+      Array.ofFn fun i : Fin 44 =>
+        FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+          (suzukiDF6D4FullOddOffDiagonalInterval
+            (suzukiDF6D4OddLowMode i) 392) := by
+  have h := suzukiDF6D4FixedGridShard091Stage0_valid.2.2.2.2
+  change suzukiDF6D4FixedGridShard091OddFullData =
+    Array.ofFn (fun i : Fin 44 =>
+      FixedGridInterval.ofRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FullOddOffDiagonalInterval
+          (suzukiDF6D4OddLowMode i) 392)) at h
+  exact h
+
+def suzukiDF6D4FixedGridShard091OddResidualSoundness :=
+  Array.ofFn fun i : Fin 44 =>
+    (suzukiDF6D4FixedGridShard091OddFullData[i.val]!).sub
+      (suzukiDF6D4FixedGridShard091OddDotSoundness i.val
+        suzukiDF6D4FixedGridShard091OddResidualComparisonData)
+
+theorem suzukiDF6D4FixedGridShard091OddResidual_eq_checked :
+    suzukiDF6D4FixedGridShard091OddResidualData =
+      suzukiDF6D4FixedGridShard091OddResidualSoundness := by
+  have h := suzukiDF6D4FixedGridShard091Stage1_valid.2.2
+  change suzukiDF6D4FixedGridShard091OddResidualData =
+    suzukiDF6D4FixedGridShard091OddResidualSoundness at h
+  exact h
+
+theorem suzukiDF6D4FixedGridShard091OddResidualData_contains (i : Fin 44) :
+    (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+      (suzukiDF6D4FixedGridShard091OddResidualData[i.val]!)).Contains
+        (suzukiDF6D4OddResidualColumn 392 i) := by
+  have hx (k : Fin 256) :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091OddResidualComparisonData[k.val]!)).Contains
+          (suzukiDF6D4ComparisonOddOffDiagonal
+            (suzukiDF6D4GalerkinMode k) 392) := by
+    rw [suzukiDF6D4FixedGridShard091OddResidualComparison_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4ComparisonOddOffDiagonalInterval_contains
+        (suzukiDF6D4GalerkinMode k) 392
+        (by simp [suzukiDF6D4GalerkinMode])
+        (by have := k.isLt; simp [suzukiDF6D4GalerkinMode] at *; omega))
+  have hdot' :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091OddDotSoundness i
+          suzukiDF6D4FixedGridShard091OddResidualComparisonData)).Contains
+        (Finset.univ.sum fun k : Fin 256 =>
+          ((suzukiDF6D4OddGalerkinApproximant k i : Rat) : Real) *
+            suzukiDF6D4ComparisonOddOffDiagonal
+              (suzukiDF6D4GalerkinMode k) 392) := by
+    simpa [suzukiDF6D4FixedGridShard091OddDotSoundness] using
+      suzukiDF6D4FixedGridOddDotSoundness_contains i
+        suzukiDF6D4FixedGridShard091OddResidualComparisonData
+        (fun k => suzukiDF6D4ComparisonOddOffDiagonal
+          (suzukiDF6D4GalerkinMode k) 392) hx
+  have hfull :
+      (FixedGridInterval.toRationalInterval suzukiDF6D4FixedGridDenominator
+        (suzukiDF6D4FixedGridShard091OddFullData[i.val]!)).Contains
+          (suzukiDF6D4OddOffDiagonal (suzukiDF6D4OddLowMode i) 392) := by
+    rw [suzukiDF6D4FixedGridShard091OddFull_eq_live]
+    simpa using FixedGridInterval.contains_ofRationalInterval
+      suzukiDF6D4FixedGridDenominator_pos
+      (suzukiDF6D4FullOddOffDiagonalInterval_contains
+        (suzukiDF6D4OddLowMode i) 392
+        (by simp [suzukiDF6D4OddLowMode])
+        (by simp [suzukiDF6D4OddLowMode]; omega)
+        (by omega))
+  rw [suzukiDF6D4FixedGridShard091OddResidual_eq_checked]
+  have hentry :
+      suzukiDF6D4FixedGridShard091OddResidualSoundness[i.val]! =
+        (suzukiDF6D4FixedGridShard091OddFullData[i.val]!).sub
+          (suzukiDF6D4FixedGridShard091OddDotSoundness i
+            suzukiDF6D4FixedGridShard091OddResidualComparisonData) := by
+    simp [suzukiDF6D4FixedGridShard091OddResidualSoundness, i.isLt]
+  rw [hentry]
+  exact FixedGridInterval.contains_sub hfull hdot'
+
+end RiemannHypothesisProject.Experiments.M100

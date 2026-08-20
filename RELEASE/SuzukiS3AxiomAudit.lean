@@ -1,0 +1,46 @@
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion
+import RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
+
+/-!
+# Suzuki S3 release axiom audit
+
+Run with:
+
+`lake env lean RELEASE/SuzukiS3AxiomAudit.lean`
+
+The first checks below verify that the formerly visible B2S and equation-(2.5)
+inputs compose into the genuine interval source and forcing estimates. The
+axiom reports then expose the logical and computational trust boundary of the
+representative S3 declarations.
+-/
+
+open RiemannHypothesisProject.Experiments.M100
+
+#check suzukiDF6F_interval_source_coercive
+  (suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff suzukiProjectAStar)
+  (suzukiEquation25SourceIdentityAt_proved suzukiProjectAStar)
+
+#check suzukiDF6F_fredholmPlus_solution_sourceKSeminorm_le_five
+  (suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff suzukiProjectAStar)
+  (suzukiEquation25SourceIdentityAt_proved suzukiProjectAStar)
+
+#check suzukiDF6F_fredholmMinus_solution_sourceKSeminorm_le_five
+  (suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff suzukiProjectAStar)
+  (suzukiEquation25SourceIdentityAt_proved suzukiProjectAStar)
+
+#print axioms suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff
+#print axioms suzukiEquation25SourceIdentityAt_proved
+#print axioms suzukiYoshidaEquation25EndpointKernelEvaluation
+#print axioms suzukiDF6D5B3FE_even_five_mul_norm_sq_le
+#print axioms suzukiDF6D5B3FF_even_complete_ge_two_fifths
+#print axioms suzukiDF6D5B4_fixedEndpoint_coercive
+#print axioms suzukiDF6E_interval_coercive
+#print axioms suzukiDF6F_interval_source_coercive
+#print axioms suzukiDF6F_sourceKSeminorm_solution_le
+#print axioms suzukiDF6F_fredholmPlus_solution_sourceKSeminorm_le_five
+#print axioms suzukiSourceAaSmoothCoreBurnolGuinandWeilAssumptions_proved
+#print axioms suzukiSourceLocalizedWeilPairing_smoothCore_eq_correctedCompleteForm
+#print axioms exists_suzukiSourceAaSmoothCoreFormApproximation
+#print axioms suzukiYoshidaCorrectedFormAssociatedOperator_is_sourceAa

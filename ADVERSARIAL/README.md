@@ -22,6 +22,9 @@ declarations and records the scope that survives inspection.
   positivity bridge finding and its resolution.
 - `A5_CROSS_STREAM_RECONCILIATION_2026-07-16.md` reconciles the four theorem
   streams and leaves global positivity open.
+- `S3_RELEASE_AUDIT_2026-08-20.md` audits the experimental Suzuki compact-
+  window source theorem, its checked source inhabitants, solution-estimate
+  boundary, associated operator, and separation from X19B/S4/global claims.
 - `FOUR_STREAM_AUDIT_PLAN.md` preserves the audit protocol and final register.
 
 The final scoped verdicts are:
@@ -32,6 +35,8 @@ The final scoped verdicts are:
 | P-series / zero-side summability | `VERIFIED` |
 | Selected Guinand-Weil formula | `VERIFIED` |
 | Fixed-support residual positivity | `VERIFIED_WITH_SCOPE` |
+| Suzuki S3 compact-window source package | `VERIFIED_WITH_SCOPE` |
+| X19B normalized Fredholm family | `OPEN / NOT STARTED` |
 | Global Li/Weil positivity | `OPEN / RH_HARD` |
 
 These verdicts do not constitute a proof of the Riemann Hypothesis.
@@ -44,6 +49,7 @@ From the repository root:
 lake build
 lake env lean ADVERSARIAL/EndpointAudit.lean
 lake env lean ADVERSARIAL/A4BurnolFormulaBridgeAudit.lean
+lake env lean ADVERSARIAL/S3EndpointAudit.lean
 rg -n "\b(sorry|axiom|admit)\b" RiemannHypothesisProject --glob "*.lean"
 git diff --check
 ```
