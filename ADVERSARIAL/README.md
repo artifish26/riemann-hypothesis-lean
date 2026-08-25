@@ -25,6 +25,9 @@ declarations and records the scope that survives inspection.
 - `S3_RELEASE_AUDIT_2026-08-20.md` audits the experimental Suzuki compact-
   window source theorem, its checked source inhabitants, solution-estimate
   boundary, associated operator, and separation from X19B/S4/global claims.
+- `S4_SUZUKI_PUBLICATION_AUDIT_2026-08-21.md` audits the closed X19B family,
+  source-package-free S4 wrapper, compact-window carrier, parameter bounds,
+  computational boundary, and freeze decision.
 - `FOUR_STREAM_AUDIT_PLAN.md` preserves the audit protocol and final register.
 
 The final scoped verdicts are:
@@ -36,7 +39,8 @@ The final scoped verdicts are:
 | Selected Guinand-Weil formula | `VERIFIED` |
 | Fixed-support residual positivity | `VERIFIED_WITH_SCOPE` |
 | Suzuki S3 compact-window source package | `VERIFIED_WITH_SCOPE` |
-| X19B normalized Fredholm family | `OPEN / NOT STARTED` |
+| X19B / Suzuki S4 compact-window family | `VERIFIED_WITH_SCOPE` |
+| All-radius Suzuki continuation | `FROZEN / NO-GO` |
 | Global Li/Weil positivity | `OPEN / RH_HARD` |
 
 These verdicts do not constitute a proof of the Riemann Hypothesis.
@@ -50,6 +54,7 @@ lake build
 lake env lean ADVERSARIAL/EndpointAudit.lean
 lake env lean ADVERSARIAL/A4BurnolFormulaBridgeAudit.lean
 lake env lean ADVERSARIAL/S3EndpointAudit.lean
+lake env lean ADVERSARIAL/S4EndpointAudit.lean
 rg -n "\b(sorry|axiom|admit)\b" RiemannHypothesisProject --glob "*.lean"
 git diff --check
 ```

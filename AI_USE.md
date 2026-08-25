@@ -26,9 +26,11 @@ that can be independently checked are:
 
 The release claims are deliberately narrower than the overall mathematical
 goal. In particular, the repository does not prove the Riemann Hypothesis.
-The Suzuki S3 package is experimental and compact-window only; its source-norm
-statements estimate admitted solutions and do not construct the normalized
-X19B Fredholm family. Global Li/Weil positivity remains open and RH-equivalent.
+The production Hardy theorem proves infinitely many critical-line zeros, not
+that all zeros lie there. The Suzuki S4 package constructs the normalized
+bounded-window family but remains experimental and compact-window only. The
+RIG1 annular theorem is an audited paper argument, not a checked Lean theorem.
+Global Li/Weil positivity remains open and RH-equivalent.
 
 ## Responsibility and reproducibility
 

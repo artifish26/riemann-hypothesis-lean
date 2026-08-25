@@ -5,7 +5,7 @@ import RiemannHypothesisProject.Experiments.M100.SuzukiEndpointGalerkinResidualH
 # Symmetric upper-triangle consumer for the DF6D4 residual certificates
 
 This module isolates the final exact certificate-consumption step.  Numerical
-work need only supply upper-triangle target intervals; symmetry transports those
+work need only provide upper-triangle target intervals; symmetry transports those
 enclosures to the lower triangle before the rational PSD checker is applied.
 -/
 

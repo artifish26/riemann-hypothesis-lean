@@ -38,16 +38,17 @@ jobs:
 
       - name: Check release endpoint axioms
         run: |
-          lake build \
-            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity \
-            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound \
-            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion \
-            RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaS4Publication
           lake env lean RELEASE/PublicationAxiomAudit.lean
-          lake env lean RELEASE/SuzukiS3AxiomAudit.lean
+          lake env lean RELEASE/SuzukiS4AxiomAudit.lean
 
       - name: Run adversarial endpoint consumers
         run: |
           lake env lean ADVERSARIAL/EndpointAudit.lean
           lake env lean ADVERSARIAL/A4BurnolFormulaBridgeAudit.lean
           lake env lean ADVERSARIAL/S3EndpointAudit.lean
+          lake env lean ADVERSARIAL/S4EndpointAudit.lean
