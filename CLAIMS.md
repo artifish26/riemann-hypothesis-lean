@@ -1,33 +1,35 @@
 # Publication Claims
 
-This inventory describes the production theorem scope and the separately
-labelled experimental Suzuki S3 scope of the curated public release.
-Development history is intentionally not part of the release.
+This inventory describes the checked production theorem scope, the separately
+labelled experimental Suzuki S4 scope, and the non-Lean RIG0--RIG1 research
+result in the curated public release. Development history is intentionally not
+part of the release.
 
 **The repository does not prove the Riemann Hypothesis.** It proves several
 unconditional upstream theorems, criterion equivalences, positivity on one
-fixed support class, and a compact-window experimental Suzuki theorem package.
-The global positivity statement on the right-hand side of the Li/Weil criteria
-remains open and RH-equivalent.
+fixed support class, infinitely many actual nontrivial critical-line zeros,
+and a compact-window experimental Suzuki theorem package. The global
+positivity statement on the right-hand side of the Li/Weil criteria remains
+open and RH-equivalent.
 
 ## Release identity
 
-This inventory is published in release `v0.2.0`. The tag binds the curated
+This inventory is published in release `v0.3.0`. The tag binds the curated
 source snapshot, claim inventory, axiom audits, adversarial report, and pinned
-dependency graph. The development source snapshot is the S3 closeout commit
+dependency graph. The development source snapshot is the post-RIG1 closeout
 listed below; private working documents are not included.
 
 | Field | Release value |
 | --- | --- |
-| Publication release | `v0.2.0` |
-| Development source snapshot | `c858f86` (`Close DF6F analytic source bridge`) |
-| Release date | `2026-08-20` |
+| Publication release | `v0.3.0` |
+| Development source snapshot | `6bbd1d4` (`docs: consolidate RIG1 closeout status`) |
+| Release date | `2026-08-25` |
 | Lean toolchain | `leanprover/lean4:v4.32.2` |
 | Mathlib revision | `905b95818eb32af7874a58b427f50c1711a5e96c` |
 | PrimeNumberTheoremAnd revision | `6a380f0c4658c04a420a9eb00b1ed62a1e3fde01` |
-| Release verification | Full build, production audit, S3 audit, and adversarial consumers; see `REPRODUCIBILITY.md` and the tagged workflow |
+| Release verification | Development full build; release production, S4, and adversarial audits; independent pull-request and tagged workflows; see `REPRODUCIBILITY.md` |
 
-The immutable `v0.2.0` GitHub tag binds this inventory to its release commit.
+The immutable `v0.3.0` GitHub tag binds this inventory to its release commit.
 The development commit identifies the upstream theorem-source state from
 which the curated snapshot was produced.
 
@@ -41,9 +43,11 @@ which the curated snapshot was produced.
 | Full Li criterion | Proved equivalence | All positive-index, full multiplicity-aware zeta Li coefficients |
 | Burnol positivity | Proved with restricted scope | One existentially fixed symmetric support interval |
 | PNT cutoff covariance | Proved | Regularised Li cutoff covariance from the pinned PrimeNumberTheoremAnd source |
-| Suzuki S3 compact-window coercivity | Experimental, checked | Genuine zero-mean source form on `I_0 = [log(2)/2, suzukiProjectAStar]` |
-| Suzuki S3 source identification | Experimental, checked | Compact-support localized Weil form, smooth form core, and associated source operator |
-| X19B normalized Fredholm family | Open / not started | Existence, gauge, compact-`z`, and parameter-control work remains |
+| Infinitely many critical-line zeros | Proved | Actual nontrivial zeta-zero set on `Re(s)=1/2` is infinite |
+| Suzuki S3 source theorem | Experimental, checked | Compact-window coercivity, compact-support localized Weil form, smooth form core, and associated source operator |
+| Suzuki X19B / S4 | Experimental, checked | Source-package-free solution family on the named compact radius window and closed complex unit disk, with uniform bound, Lipschitz dependence, compact image, and radius continuity from below |
+| RIG0--RIG1 | Paper result, audited, not Lean | No objectwise bad-zero transport; quantitative annular escape for a hypothetical full first-crossing kernel |
+| RIG2 / all-radius Suzuki continuation | Not admitted / frozen | No scalar or uniformly finite-dimensional reduction of the annular complement |
 | Global Li/Weil positivity | Open | Criterion-determining global class; RH-equivalent |
 
 The classifications below use the project's four theorem roles: source
@@ -196,99 +200,134 @@ an assumption-free global zero-side theorem.
 - **Audit verdict:** source-closure `SC100`; the lane is independent of the
   fixed-support Burnol formula-identification lane.
 
-## 7. Experimental Suzuki S3 milestone
+## 7. Infinitely many critical-line zeros
 
-- **Claim:** on the named compact interval
-  `I_0 = [log(2)/2, suzukiProjectAStar]`, the genuine zero-mean source form
-  satisfies `G_a >= (1/400000) K_a`.
+- **Claim:** the set of actual nontrivial zeta zeros on the critical line is
+  infinite.
 - **Lean declaration:**
-  `RiemannHypothesisProject.Experiments.M100.suzukiDF6F_interval_source_coercive`.
+  `RiemannHypothesisProject.Hardy.nontrivial_criticalLine_zetaZero_set_infinite`.
 - **File:**
-  `RiemannHypothesisProject/Experiments/M100/SuzukiYoshidaDifferentialCoreDensity.lean`.
-- **Explicit assumptions:** the declaration retains
-  `SuzukiYoshidaExponentialFormCoreSourceAt suzukiProjectAStar` and
-  `SuzukiEquation25SourceIdentityAt suzukiProjectAStar`. They have checked
-  inhabitants
+  `RiemannHypothesisProject/Hardy/CriticalLineZeroInfinitude.lean`.
+- **Exact scope:**
+  `{s : Complex | IsNontrivialZetaZero s and IsCriticalLine s}.Infinite`.
+- **Explicit assumptions:** none.
+- **Classification:** endpoint assembly consuming the selected Hardy
+  first-approximation, Stirling-phase, oscillatory-integral, normalization,
+  lower-bound, and upper-bound theorem chain.
+- **Release status:** production, checked.
+
+The proof obtains a contradiction from finite positive Hardy zero heights:
+continuity then forces constant sign on every sufficiently late dyadic
+interval, identifying its signed and absolute integrals, while the checked
+lower and upper estimates become incompatible at a sufficiently large height.
+The terminal transport gives actual nontrivial zeta zeros and uses injectivity
+of the critical-line parametrization.
+
+This theorem does not say every nontrivial zero lies on the critical line and
+does not imply RH. Full details are in `RELEASE/HARDY.md`.
+
+## 8. Experimental Suzuki S3 and S4 milestones
+
+The cumulative S3 source theorem remains checked:
+
+- `suzukiDF6F_interval_source_coercive` proves
+  `G_a >= (1/400000) K_a` on
+  `SuzukiDF6EInterval = [log(2)/2, suzukiProjectAStar]` after applying the
+  checked source inhabitants;
+- `suzukiSourceLocalizedWeilPairing_smoothCore_eq_correctedCompleteForm` and
+  `exists_suzukiSourceAaSmoothCoreFormApproximation` identify the localized
+  source form and its smooth core; and
+- `suzukiYoshidaCorrectedFormAssociatedOperator_is_sourceAa` identifies the
+  associated source operator.
+
+S4 closes the bounded-window X19B work on that genuine source surface.
+
+- **Publication module:**
+  `RiemannHypothesisProject/Experiments/M100/SuzukiYoshidaS4Publication.lean`.
+- **Radius scope:** `a` belongs to `SuzukiDF6EInterval`.
+- **Spectral scope:** `w : Complex` satisfies `||w|| <= 1`.
+- **Source packages:** the publication wrapper internally instantiates
   `suzukiYoshidaExponentialFormCoreSourceAt_boundaryCutoff` and
-  `suzukiEquation25SourceIdentityAt_proved`. The release audit checks their
-  composition into this endpoint.
-- **Classification:** endpoint assembly consuming source theorems,
-  normalization/window bridges, exact finite certificate data, residual
-  representer/Parseval estimates, and the closed form-order chain.
+  `suzukiEquation25SourceIdentityAt_proved`; no source-package argument remains
+  on the public S4 declarations.
 - **Release status:** experimental, checked, compact-window only.
 
-The associated source-norm estimate is
-`suzukiDF6F_sourceKSeminorm_solution_le` in
-`SuzukiYoshidaSourceNormConsumer.lean`. It proves
-`||u||_K <= C / (1/400000 - lambda)` for an explicitly admitted solution and
-source-dual forcing bound. The solution equation is a premise: this is not a
-solution-existence theorem and not an ambient bounded inverse for compact
-`G_a`.
+The principal S4 declarations are:
 
-The uniform projected forcing specializations are
-`suzukiDF6F_fredholmPlus_solution_sourceKSeminorm_le_five` and
-`suzukiDF6F_fredholmMinus_solution_sourceKSeminorm_le_five` in
-`SuzukiYoshidaFredholmUniformBound.lean`. Their shift, interval membership, and
-solution equations remain explicit.
+- `suzukiS4CompactWindowSolution`;
+- `suzukiS4CompactWindowSolution_norm_le_fourThousand`, with uniform
+  source-energy bound `4000`;
+- `suzukiS4CompactWindowSolutionMap_lipschitz`;
+- `suzukiS4CompactWindowSolutionMap_isCompact_range`; and
+- `eventually_suzukiS4CompactWindowSolution_close_from_below`, after canonical
+  completion transport at interior radii.
 
-The genuine source identification is represented by:
+These results live in Suzuki's genuine shifted source-energy completion. They
+do not assert an interval-`L2` representative for every completion vector,
+all-radius nondegeneracy, a completed-zeta limit, global Weil positivity, or
+RH. Full details are in `RELEASE/SUZUKI_S4.md`.
 
-- `suzukiSourceAaSmoothCoreBurnolGuinandWeilAssumptions_proved` in
-  `SuzukiYoshidaSourceAaBurnolFormula.lean`;
-- `suzukiSourceLocalizedWeilPairing_smoothCore_eq_correctedCompleteForm` and
-  `exists_suzukiSourceAaSmoothCoreFormApproximation` in
-  `SuzukiYoshidaSourceAaClosedFormCompletion.lean`; and
-- `suzukiYoshidaCorrectedFormAssociatedOperator_is_sourceAa` in
-  `SuzukiYoshidaSourceAaIdentification.lean`.
+## 9. RIG0--RIG1 paper result
 
-Together these identify the compact-support localized Weil pairing, its
-closed completed form and smooth form core, and Suzuki's associated source
-operator. They do not assert absolute convergence of the literal zero series
-for every completed-domain pair.
+This part of the release is documentation, not checked Lean.
 
-Full theorem, assumption, computational-trust, and limitation details are in
-`RELEASE/SUZUKI_S3.md`.
+RIG0 found no objectwise invariant-preserving transport from one prescribed
+off-critical zero to one Suzuki crossing mode. It did establish, on the exact
+completed generalized source carrier, that the canonical annular projection
+is injective on the full first-crossing kernel.
 
-## 8. Open X19B and global statements
+RIG1 strengthened this to the paper theorem
+`FirstCrossingKernelQuantitativeAnnularEscape`. For a hypothetical first
+crossing `a0`, shift `sigma < 0`, earlier radius `0 < b < a0`, and every
+crossing-kernel vector `u`, it gives
 
-- **Claim status:** open and RH-hard.
+```text
+||(I-Pi_b)u||_sigma^2
+  >= lambda(b)/(lambda(b)-sigma) * ||u||_sigma^2.
+```
+
+The theorem permits a nonzero crossing kernel and its constant may collapse as
+`b` approaches `a0`. The canonical annular complement remains uncontrolled
+and generally infinite-dimensional, so RIG2 was not admitted. No Lean
+declaration in this release bears the paper theorem's name. See
+`RELEASE/RIGIDITY_RIG1.md`.
+
+## 10. Open global statements
+
 - **Checked criterion:**
   `RiemannHypothesisProject.ComplexCompactExhaustion.mathlib_RH_iff_fullZetaLiCoefficient_nonneg`.
 - **Open obligation:** unconditional global nonnegativity of all full Li
-  coefficients, equivalently global Weil positivity on a criterion-determining
-  class.
+  coefficients, equivalently global Weil positivity on a
+  criterion-determining class.
 - **Classification:** open endpoint target.
 - **Release status:** open and RH-equivalent.
 
-Nothing in this release changes this status.
-
-X19B is also open. S3 supplies its source-compatible entry theorem but does not
-construct the normalized fixed-gauge Fredholm solution family, prove compact-
-`z` bounds, or prove parameter continuity/precompactness. The all-radius
-no-degeneracy endpoint remains `RH_HARD` and is outside the S3 release.
+S4 and RIG1 do not change this status. The Suzuki programme is frozen at its
+compact-window theorem because no named all-radius propagation or exact
+crossing-exclusion mechanism has been established.
 
 ## Import and axiom boundary
 
-`RiemannHypothesisProject/Basic.lean` imports the production surface.
-`RELEASE/PublicationAxiomAudit.lean` is a repeatable, non-production consumer
-that prints the axioms of the representative production endpoints listed
-here. `RELEASE/SuzukiS3AxiomAudit.lean` separately checks the experimental S3
-compositions and prints their axiom dependencies. The production audit reports
-only:
+`RiemannHypothesisProject/Basic.lean` imports the production surface, including
+the Hardy endpoint, but no experimental module.
+`RELEASE/PublicationAxiomAudit.lean` prints the axioms of representative
+production endpoints. `RELEASE/SuzukiS4AxiomAudit.lean` separately checks the
+experimental S4 wrappers. The production audit reports only:
 
 - `propext`;
 - `Classical.choice`;
 - `Quot.sound`.
 
-The S3 certificate chain additionally retains the declared compiler-backed
-`native_decide` trust boundary for exact finite decision problems. The precise
-names emitted by the tagged audit are part of the release verification record;
-see `RELEASE/SUZUKI_S3.md`.
+The Suzuki certificate chain additionally retains the declared
+compiler-backed `native_decide` trust boundary for exact finite decision
+problems. The S4 wrappers introduce no new project axiom or source package.
+The precise names emitted by the tagged audits are part of the release
+verification record; see `RELEASE/SUZUKI_S4.md`.
 
-This audit mechanically records the Lean dependency boundary of the selected
-declarations. It does not by itself establish that every formal definition,
-normalisation, or theorem statement is semantically faithful to the cited
-mathematics; that remains a matter for mathematical review.
+These audits mechanically record Lean dependency boundaries. They do not by
+themselves establish that every formal definition, normalization, or theorem
+statement is semantically faithful to the cited mathematics. RIG1 is outside
+this axiom boundary because it is explicitly a paper-only theorem.
 
 ## External reviewer checklist
 
@@ -315,3 +354,18 @@ The most valuable bounded review targets are:
    `burnolLocalSpectralQuadraticForm_eq_two_pi_mul_guinandWeilBurnolLiteratureResidualSide`
    in `BurnolFormulaIdentification.lean`, with particular attention to the
    fixed support class and exact `2 * pi` factor.
+5. **Hardy analytic chain and final transport.** Review
+   `nontrivial_criticalLine_zetaZero_set_infinite` in
+   `RiemannHypothesisProject/Hardy/CriticalLineZeroInfinitude.lean` together
+   with `LowerIntegralBound.lean` and `UpperIntegralBound.lean`, especially
+   the first-approximation error, phase normalization, and passage from Hardy
+   zeros to actual nontrivial zeta zeros.
+6. **Suzuki S4 carrier and parameter bounds.** Review
+   `SuzukiYoshidaS4Publication.lean` and
+   `SuzukiYoshidaX19BBoundedWindowSolutions.lean`, especially the completed
+   source carrier, source-package instantiation, radius interval, complex unit
+   disk, and directed completion transport.
+7. **RIG1 paper derivation.** Review `RELEASE/RIGIDITY_RIG1.md` independently
+   of Lean, with particular attention to the completed source domain, the
+   `gbar`/`kbar` block identities, and the constant
+   `lambda(b)/(lambda(b)-sigma)`.

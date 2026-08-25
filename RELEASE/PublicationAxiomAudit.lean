@@ -5,6 +5,7 @@ import RiemannHypothesisProject.LiCriterion.ZetaBombieriLagariasCriterion
 import RiemannHypothesisProject.LiCriterion.CutoffCovarianceUnconditional
 import RiemannHypothesisProject.WeilPositivity.ZetaPolynomialGaussianFormulaBridge
 import RiemannHypothesisProject.WeilPositivity.BurnolFormulaClosure
+import RiemannHypothesisProject.Hardy.CriticalLineZeroInfinitude
 
 /-!
 # Publication endpoint axiom audit
@@ -28,3 +29,4 @@ production endpoints, but no production module imports this audit file.
 #print axioms RiemannHypothesisProject.SchwartzLineTestFunction.exists_burnolFixedSupport_guinandWeilBurnolLiteratureResidual_nonneg
 #print axioms RiemannHypothesisProject.SchwartzLineTestFunction.exists_burnolFixedSupport_guinandWeilBurnolLiteratureZeroSide_nonneg
 #print axioms RiemannHypothesisProject.ComplexCompactExhaustion.tendsto_liCutoffCovariance_unconditional
+#print axioms RiemannHypothesisProject.Hardy.nontrivial_criticalLine_zetaZero_set_infinite

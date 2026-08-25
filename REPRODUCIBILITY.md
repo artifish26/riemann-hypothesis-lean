@@ -19,14 +19,15 @@ and Mathlib cache artifacts.
 ```text
 git clone https://github.com/artifish26/riemann-hypothesis-lean.git
 cd riemann-hypothesis-lean
-git checkout v0.2.0
+git checkout v0.3.0
 lake exe cache get
 lake build
 lake env lean RELEASE/PublicationAxiomAudit.lean
-lake env lean RELEASE/SuzukiS3AxiomAudit.lean
+lake env lean RELEASE/SuzukiS4AxiomAudit.lean
 lake env lean ADVERSARIAL/EndpointAudit.lean
 lake env lean ADVERSARIAL/A4BurnolFormulaBridgeAudit.lean
 lake env lean ADVERSARIAL/S3EndpointAudit.lean
+lake env lean ADVERSARIAL/S4EndpointAudit.lean
 ```
 
 Before the tag exists, omit the `git checkout` command. Do not run
@@ -41,17 +42,16 @@ lake build RiemannHypothesisProject.GuinandWeilConcrete.PolynomialGaussianFormul
 lake build RiemannHypothesisProject.GuinandWeilConcrete.PolynomialGaussianDensityBridge
 lake build RiemannHypothesisProject.LiCriterion.ZetaBombieriLagariasCriterion
 lake build RiemannHypothesisProject.WeilPositivity.BurnolFormulaClosure
+lake build RiemannHypothesisProject.Hardy.CriticalLineZeroInfinitude
 ```
 
-## Focused Suzuki S3 builds
+## Focused Suzuki S4 build
 
-The final source-identification and source-norm surface can be rebuilt with:
+The cumulative S3 source chain and X19B dependencies are transitively rebuilt
+by the source-package-free S4 publication target:
 
 ```text
-lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity
-lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound
-lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion
-lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
+lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaS4Publication
 ```
 
 The exact finite certificate modules are transitive dependencies of these
@@ -72,17 +72,25 @@ Mathlib foundations `propext`, `Classical.choice`, and `Quot.sound`. Any
 `sorryAx`, project-defined axiom, or additional unadvertised assumption is a
 release blocker.
 
-Run the experimental S3 audit separately:
+Run the experimental S4 audit separately:
 
 ```text
-lake env lean RELEASE/SuzukiS3AxiomAudit.lean
+lake env lean RELEASE/SuzukiS4AxiomAudit.lean
 ```
 
-Its output must agree with the trust boundary in `RELEASE/SUZUKI_S3.md`. In
+Its output must agree with the trust boundary in `RELEASE/SUZUKI_S4.md`. In
 particular, the finite certificate chain is permitted to expose only the
 declared compiler-backed `native_decide` boundary in addition to standard
 logical foundations. Any `sorryAx` or unlisted project axiom is a release
 blocker.
+
+## Paper-only RIG1 result
+
+`RELEASE/RIGIDITY_RIG1.md` is not a Lean artifact and therefore has no axiom
+report. Its status is deliberately limited to an audited mathematical
+derivation. Rebuilding the repository checks the Lean source on which its
+notation and source-carrier discussion rely; it does not kernel-check the
+annular escape theorem itself.
 
 ## Source checks
 
@@ -93,5 +101,5 @@ rg -n "\b(sorry|admit)\b|^\s*axiom\s" RiemannHypothesisProject -g "*.lean"
 ```
 
 GitHub Actions performs an independent clean Ubuntu build for pull requests to
-`main`, manual workflow runs, and `v*` tags. It runs the production and S3 axiom
+`main`, manual workflow runs, and `v*` tags. It runs the production and S4 axiom
 audits and all listed adversarial Lean consumers after the full build.
