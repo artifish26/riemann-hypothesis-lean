@@ -38,6 +38,10 @@ jobs:
 
       - name: Check release endpoint axioms
         run: |
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaDifferentialCoreDensity
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaFredholmUniformBound
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaClosedFormCompletion
+          lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaSourceAaIdentification
           lake build RiemannHypothesisProject.Experiments.M100.SuzukiYoshidaS4Publication
           lake env lean RELEASE/PublicationAxiomAudit.lean
           lake env lean RELEASE/SuzukiS4AxiomAudit.lean
